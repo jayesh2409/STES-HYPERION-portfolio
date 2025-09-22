@@ -68,10 +68,10 @@ nav a {
   transition: background 0.3s;
 }
 
-nav a:hover {
+/* nav a:hover {
   color: #ffffff;
   font-size: larger;
-}
+} */
 
 /* Main content spacing */
 main {
