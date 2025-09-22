@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';  // IMPORTANT for routerLink to work
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,               // MUST be true
+  imports: [RouterModule],        // This enables <router-outlet> and routerLink
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'STES-Hyperion';
-}
+export class AppComponent { }

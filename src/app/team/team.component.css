@@ -1,0 +1,46 @@
+.team-body{
+  display: block;
+  background: linear-gradient(135deg,#767676 0%, #000000 60%, gray 100%);
+  color: rgb(252, 252, 252);
+  min-height: 100vh;
+  width: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.blank{
+    min-height: 20px;
+    width: 100%;
+}
+
+.top-image{
+    background-image: url('/assets/image/team_image/japanese_countryside_evening.png'); /* your image */
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* how tall the image area is */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title, .introduction{
+    text-align: center;
+}
+
+.title{
+    font-family: nebula;
+    font-size: xx-large;
+}
+.introduction{
+    padding: 30px;
+    /* background: #805e5e; */
+    font-size: large;
+}

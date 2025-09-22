@@ -1,0 +1,112 @@
+body{
+  padding: 0;
+}
+
+/* Reset default margins/padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Fixed Navbar */
+nav {
+  background-color: transparent;
+  backdrop-filter: blur(10px); /* blur effect on the background */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: larger;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  width: 100%;
+}
+
+.tabs .child{
+  border: 2px solid rgba(239, 239, 239, 0.756); /* adds a black border */
+  padding: 2px;
+  /* padding-left: 2px;
+  padding-right: 5px; */
+  margin: 5px;
+}
+
+.child{
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+nav .nav-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap; /* Wrap buttons on small screens */
+  padding: 15px 0;
+  gap: 10px;
+}
+
+nav a {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-decoration: none;  /* to remove the default underline */
+  padding: 8px 15px;
+  background: none;
+  border-radius: 0;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  color: #ffffff;
+  font-size: larger;
+}
+
+/* Main content spacing */
+main {
+  flex: 1;
+  padding-top: 70px; /* Enough for navbar height */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.page-container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  position: relative; /* relative footer */
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  nav .nav-container {
+    flex-direction: column;
+  }
+  nav a {
+    width: 80%;
+    text-align: center;
+  }
+}
