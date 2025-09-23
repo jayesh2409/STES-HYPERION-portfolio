@@ -1,0 +1,10 @@
+.image-container-anantam{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container-anantam img{
+  max-width: 100%;
+  height: auto;
+}

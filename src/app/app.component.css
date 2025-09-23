@@ -37,7 +37,7 @@ nav {
 }
 
 .tabs .child{
-  border: 2px solid rgba(239, 239, 239, 0.756); /* adds a black border */
+  border: 1.5px solid rgba(239, 239, 239, 0.756); /* adds a black border */
   padding: 2px;
   /* padding-left: 2px;
   padding-right: 5px; */
@@ -47,6 +47,10 @@ nav {
 .child{
   padding-left: 3px;
   padding-right: 3px;
+}
+
+.child:hover{
+  color: rgb(255, 80, 80);
 }
 
 nav .nav-container {
