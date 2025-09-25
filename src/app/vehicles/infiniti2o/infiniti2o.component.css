@@ -8,3 +8,46 @@
   max-width: 100%;
   height: auto;
 }
+
+/* for content */
+
+.parent-container {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.title {
+  font-size: 2rem;
+  
+  margin-bottom: 20px;
+  -webkit-box-reflect: below -0.8px linear-gradient(to bottom, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.4) 100%);
+}
+
+.child-container {
+  display: flex;
+  gap: 20px;              /* spacing between children */
+  justify-content: center;
+  flex-wrap: wrap;        /* helps on smaller screens */
+  color: #7CCADE;
+}
+
+.child {
+  flex: 1 1 45%;          /* take ~45% width on desktop */
+  min-width: 250px;       /* don’t shrink too small */
+  background-color: #000000;
+}
+
+/* Mobile view (stacked) */
+@media (max-width: 768px) {
+  .child-container {
+    flex-direction: column;   /* stack vertically */
+    align-items: center;
+  }
+
+  .child {
+    width: 90%;               /* take most of mobile width */
+  }
+}

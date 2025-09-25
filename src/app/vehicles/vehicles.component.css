@@ -8,25 +8,79 @@
     padding: 0;
 }
 
-.vehicle-buttons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.vehicle-navbar {
+  background: white;
+  border-bottom: 2px solid black;
+  padding: 10px;
 }
 
-.v1{
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  position: relative; /* Essential for positioning the image inside */
-  display: inline-block; /* Allows width/height and other box model properties */
-  padding: 10px 20px;
-  border: 2px solid #252525; /* The button's border */
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* hidden on desktop */
+}
+
+.nav-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.v1 {
+  font-family: 'Poppins', sans-serif !important;
   text-decoration: none;
-  color: #454545;
-  overflow: hidden; /* Hides the overflowing image border when it scales */
+  color: black;
+  font-weight: 500;
+  padding: 8px 12px;
+  border: 2px solid gray;
+  /* border-radius: 6px; */
+  transition: background-color 0.3s;
 }
 
 .v1:hover {
-  background-color: white; /* solid white bg */
-  color: rgb(108, 108, 108);            /* text becomes black for contrast */
-  border: 2px solid rgb(61, 61, 61);
+  background: #f2f2f2;
+}
+
+.active {
+  text-decoration: underline;
+  border-color: black;
+  font-weight: bold;
+}
+
+/* 📱 Mobile view */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* show hamburger */
+  }
+
+  .nav-links {
+    display: none;         /* hide links initially */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links.open {
+    display: flex; /* show when menu is toggled */
+  }
+
+  .v1 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
 }

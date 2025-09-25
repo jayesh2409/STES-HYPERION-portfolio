@@ -9,4 +9,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './vehicles.component.html',
   styleUrls: ['./vehicles.component.css']
 })
-export class VehiclesComponent {}
+export class VehiclesComponent {
+  isMenuOpen = false; // for mobile toggle
+}
