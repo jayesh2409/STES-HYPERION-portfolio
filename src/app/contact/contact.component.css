@@ -1,12 +1,10 @@
 .contact-container {
-    background: url("/assets/image/STES H/coverimage1.JPG") no-repeat center center;
+    background: url("/assets/image/STES_H/coverimage1.JPG") no-repeat center center;
     background-size: cover;
     height: 800px;
     color: white;
     display: flex;
 }
-
-
 
 .field{
     display: flex;
@@ -14,4 +12,46 @@
     padding: 10px;
     font-weight:400;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.reach-us{
+    height: auto;
+    width: 100%;
+    background-color: rgb(116, 116, 116);
+    color: white;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column; /* Mobile first */
+  gap: 10px;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.parent-out{
+
+}
+
+@media (min-width: 768px) {
+  .parent {
+    flex-direction: row; /* Desktop */
+  }
+}
+
+.child {
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-right: 3px solid black;
+}
+
+.hfive{
+    color:rgb(49, 48, 48)
+}
+.hsix{
+    color: rgb(84, 84, 84); 
 }

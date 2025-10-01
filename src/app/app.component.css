@@ -14,9 +14,9 @@ html, body {
 
 /* Fixed Navbar */
 nav {
-  background-color: transparent;
-  backdrop-filter: blur(10px); /* blur effect on the background */
-  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  background-color: black;
+  /* backdrop-filter: blur(10px); blur effect on the background */
+  /* -webkit-backdrop-filter: blur(10px); for Safari */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -37,7 +37,7 @@ nav {
 }
 
 .tabs .child{
-  border: 1.5px solid rgba(239, 239, 239, 0.756); /* adds a black border */
+  /* border: 1.5px solid rgba(239, 239, 239, 0.756); adds a black border */
   padding: 2px;
   /* padding-left: 2px;
   padding-right: 5px; */

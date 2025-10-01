@@ -35,18 +35,27 @@
 .hero-content {
   text-align: center;
   padding: 30px;
-  z-index: 2;
+  z-index: 1;
 }
 
 /* Title */
 .title {
     font-family: 'Orbitron', sans-serif !important;
-  font-size: clamp(28px, 6vw, 64px);
+  /* font-size: clamp(28px, 6vw, 64px); */
   font-weight: 900;
   font-size: 60px !important;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   margin: 0 0 10px;
   text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+/* stes title */
+.stes{
+  font-size: 40px !important;
+}
+
+.hyperion{
+  font-size: 55px !important;
 }
 
 /* Subtitle staggered after title */
