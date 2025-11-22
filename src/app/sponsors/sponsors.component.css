@@ -79,7 +79,6 @@ hr {
   flex-wrap: wrap;
   justify-content: left;
   grid-template-columns: repeat(3, 300px); /* 3 children per row */
-  gap: 50px;
 }
 
 .logo-for-hover{
@@ -97,9 +96,80 @@ hr {
 
 
 
+
+
+
+
+
+
+.hover-wrapper {
+    position: relative;
+    font-family: 'Titillium Web', sans-serif;
+    width: 300px;     /* adjust to your image size */
+    height: 300px;
+}
+
+.hover-wrapper a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-padding{
+    padding: 10px;
+  }
+
+.logo-for-hover {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.hover-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(98, 98, 98, 0.756);   /* invisible initially */
+    color: white;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.hover-wrapper:hover .hover-overlay {
+    background-color: rgba(0,0,0,0.8); /* solid bg on hover */
+    opacity: 1;
+}
+
+
+
+
+
+
 @media (max-width: 768px) {
 
 
+  .hover-wrapper {
+    font-family: 'Titillium Web', sans-serif;
+    position: relative;
+    width: 100px;     /* adjust to your image size */
+    height: 100px;
+  }
+
+  .hover-overlay{
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overlay-padding{
+    padding: 3px;
+  }
 
   .sponsors-logo-home{
   display: grid;

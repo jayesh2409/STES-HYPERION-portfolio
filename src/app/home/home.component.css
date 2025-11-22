@@ -43,6 +43,17 @@ h1 {
 
 }
 
+.stes-written{
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+
+.hyperion-written{
+  font-size: 70px;
+  font-weight: 900;
+}
+
 
 .img-border{
  padding-top: 10px;
@@ -155,10 +166,6 @@ h1 {
       width: 100vw;
       height: auto;
       background-color: black;
-      /* background-image: url('/assets/image/home_images/homepage_bg.jpg'); */
-      /* background-size: 100% auto; Full width, auto height */
-      /* background-repeat: no-repeat; */
-      /* background-position: center top; */
       color: white;
       padding: 20px;
       display: flex;
@@ -182,7 +189,7 @@ h1 {
 }
 
 .vehicles-tab:hover{
-  background-color: rgb(160, 0, 0);
+  background-color: rgb(163, 0, 0);
   color: white;
   border: 2px solid rgb(63, 63, 63);
 }
@@ -222,13 +229,16 @@ h1 {
 /* Mobile view (max width 768px) */
 @media (max-width: 768px) {
 
-  .hyperion{
+  .hyperion-written{
     /* font-size: small; */
-    font-size: 50px; 
-    font-weight: 700;
+    font-size: 48px; 
+    font-weight: 900;
   }
 
-
+  .stes-written{
+    font-size: 40px;
+    font-weight: 700;
+  }
 
 
 
