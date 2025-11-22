@@ -17,6 +17,10 @@ import { AnantamComponent } from './vehicles/anantam/anantam.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'team', component: TeamComponent },
+  { path: '', redirectTo: 'team', pathMatch: 'full' },
   { path: 'about', component: AboutComponent },
   { path: 'team', component: TeamComponent },
   { path: 'sponsors', component: SponsorsComponent },
@@ -38,3 +42,4 @@ export const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: '**', redirectTo: '' }
 ];
+

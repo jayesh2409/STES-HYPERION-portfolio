@@ -9,6 +9,32 @@
   height: auto;
 }
 
+
+/* /* // font size changing remember to change it for all the vehicles */
+
+h2 {
+  font-size: 20px; /* change the size */
+  /* color: blue;     optional: change color */
+  font-weight:bolder; /* optional */
+}
+
+h4 {
+  font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* for content */
 
 .parent-container {
@@ -17,6 +43,7 @@
   text-align: center;
   background-color: black;
   color: white;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .title {

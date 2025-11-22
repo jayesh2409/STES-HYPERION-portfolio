@@ -1,16 +1,27 @@
-<!-- <div class="nav_bg"style="height: 80px; background-color: #108090;"></div> -->
+<div class="nav_bg"style="height: 75px; background-color: black;"></div>
+
+
+
 
 <div class="welcome-page">
     
     <!-- left half -->
     <div class="left" style="background-color: aqua;" style="padding: 30px; align-items: left; padding-top: 130px">
         <div>
-            <div style="display: flex; flex-direction: column; ">
-                <h1>
+            <div style="display: flex; flex-direction: column; font-family: 'Orbitron', sans-serif !important; letter-spacing: 3px;">
+
+                <p class="stes" style="font-size: 43px; font-weight: 700;">STES</p>
+                <p class="hyperion" style="font-size: 70px; font-weight: 900;">HYPERION</p>
+                <p class="weclutch" style="font-size: 21px;">WE CLUTCH, WE ENDURE...</p>
+
+
+
+
+                <!-- <h1>
                     STES <br>
                     <span class="highlight">HYPERION</span>
-                    <span class="highlight-sentence">WE CLUTCH, WE ENDURE...</span>
-                </h1>
+                    <span class="highlight-sentence" style="font-size: small;">WE CLUTCH, WE ENDURE...</span>
+                </h1> -->
             </div>
         </div>
     </div>
@@ -19,61 +30,265 @@
     
 </div>
 
-<!-- border -->
- <div style="height: 7px; width: 100%; background-color: rgb(255, 255, 255);"></div>
+<!-- main -->
+ <div class="main-content" style="height: auto; width: 100%; background-color: rgb(255, 255, 255);">
+
+
+
+
+
+
+
+    <div class="about-info">
+        <div class="about-info-inside"> 
+            <!-- <p>Team STES Hyperion is a Student-led Team from the Sinhgad Technical
+                Education Society in Pune, India, dedicated to design, build, and race a
+                next-generation Solar Vehicle.
+                Team STES Hyperion is a Student-led Team from the Sinhgad Technical
+                Education Society in Pune, India, dedicated to design, build, and race a
+                next-generation Solar Vehicle.
+            </p> -->
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="mission">
+
+        <div class="mission-title">
+            <p>
+                OUR MISSION
+            </p>
+        </div>
+
+        <div class="mission-blocks">
+            <div class="mission-blocks-one">
+                <div class="mission-blocks-one-inside">
+                    <p>
+                        To inspire the next generation of engineers and promote sustainable
+                        transportation. To foster hands-on learning, interdisciplinary
+                        collaboration, and engineering excellence through designing and
+                        building innovative solar vehicles.
+
+                    </p>
+                </div>
+            </div>
+            <div class="mission-blocks-one">
+                <div class="mission-blocks-one-inside">
+                    <p>
+                        Education Society in Pune, India, dedicated to design, build, and race a
+                        next-generation Solar Vehicle.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="about-vehicles">
+
+        <div>
+            <div class="img-border">
+                <img class='vehicle-image' src="/assets/image/STES_H/IMG_9477.JPG">
+            </div>
+        </div>
+
+        <div style="text-align: justify; padding: 40px; font-family: 'Poppins', sans-serif !important;">
+            <h4>TEAM STES HYPERION</h4>
+            <p>Team STES Hyperion is a Student-led Team from the Sinhgad Technical
+                Education Society in Pune, India, dedicated to design, build, and race a
+                next-generation Solar Vehicle.
+                Team STES Hyperion is a Student-led Team from the Sinhgad Technical
+                Education Society in Pune, India, dedicated to design, build, and race a
+                next-generation Solar Vehicle.
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="stes">
+
+
+        <div class="stes-info">
+            <h4>SINHGAD INSTITUTES</h4>
+            <p>Team STES Hyperion is a Student-led Team from the Sinhgad Technical
+                Education Society in Pune, India, dedicated to design, build, and race a
+                next-generation Solar Vehicle.
+                Team STES Hyperion is a Student-led Team from the Sinhgad Technical
+                Education Society in Pune, India, dedicated to design, build, and race a
+                next-generation Solar Vehicle.
+            </p>
+        </div>
+
+        <div>
+            <div class="img-border">
+                <img class="stes-image" src="/assets/image/home_images/c1c2.webp">
+            </div>
+        </div>
+        
+      
+    </div>
+
+
+
+
+
+    <div class="team-members">
+        <div>
+            <div class="img-border">
+                <img class='team-image' src="/assets/image/team_image/2025team.JPG">
+            </div>
+        </div>
+
+        <div style="text-align: justify; padding: 40px; font-family: 'Poppins', sans-serif !important;">
+            <h4>TEAM</h4>
+            <p>We believe that every team member should maintain a functional understanding of all subsystems—sufficient to identify potential issues and meaningfully contribute to their resolution. This shared technical awareness, combined with strong team cohesion, forms the foundation of our innovation, efficiency, and resilience.
+            </p>
+            <div style="padding-top: 25px;">
+                <a class="vehicles-tab" (click)="goToTeam()">View Team</a>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+    <div class="about-team">
+
+
+        <div class="about-team-info">
+            <h4>VEHICLES</h4>
+            <p>Team STES Hyperion is a Student-led Team from the Sinhgad Technical
+                Education Society in Pune, India, dedicated to design, build, and race a
+                next-generation Solar Vehicle.
+                Team STES Hyperion is a Student-led Team from the Sinhgad Technical
+                Education Society in Pune, India, dedicated to design, build, and race a
+                next-generation Solar Vehicle.
+            </p>
+
+            <div style="padding-top: 25px;">
+                <a class="vehicles-tab" (click)="goToVehicles()">View Vehicles</a>
+            </div>
+
+        </div>
+
+        <div>
+            <div class="img-border">
+                <img class="about-team-image" src="/assets/image/STES_H/DSC_5720.JPG">
+            </div>
+        </div>
+        
+      
+    </div>
+
+
+    <!-- sponsors of team stes hyperion -->
+    <div class="sponsors-home" style="display: flex; flex-direction: column;">
+
+        <!-- 1 title -->
+        <div class="sponsors-title-home" style="padding: 20px; padding-top: 30px; text-align: center;">
+            <div>
+                <p>OUR SPONSORS</p>
+            </div>
+        </div>
+
+        <!-- 2 logos -->
+         <div class="sponsors-logo-home" style="padding: 20px;">
+
+            <!-- logo L1 myconstruction-->
+            <div style="width: 100px; height: auto;">
+                <a href="https://www.myconstruction.co.in/">
+                    <img class="logo-for-hover" src="/assets/image/sponsors_image/HYP LOGO/MY CONSTRUCTION.png">
+                </a>
+            </div>
+
+
+            <!-- logo L2 bentork-->
+            <div style="width: 100px; height: auto;">
+                <a href="https://bentork.com/">
+                    <img class="logo-for-hover" src="/assets/image/sponsors_image/HYP LOGO/Bentork.png">
+                </a>
+            </div>
+
+
+            <!-- logo L3 solidworks-->
+            <div style="width: 100px; height: auto;">
+                <a href="https://www.solidworks.com/customer-story/dentium-streamlines-design-and-development-combining-solidworks-and-3dexperience-works/">
+                    <img class="logo-for-hover" src="/assets/image/sponsors_image/HYP LOGO/SOLID WORKS.png">
+                </a>
+            </div>
+
+
+            <!-- logo L4 ansys-->
+            <div style="width: 100px; height: auto;">
+                <a href="https://www.ansys.com/">
+                    <img class="logo-for-hover" src="/assets/image/sponsors_image/HYP LOGO/ansys.png">
+                </a>
+            </div>
+
+            <!-- logo L5 cabonext-->
+            <div style="width: 100px; height: auto;">
+                <a href="https://www.carbonext.net/">
+                    <img class="logo-for-hover" src="/assets/image/sponsors_image/HYP LOGO/carbonextblack.png">
+                </a>
+            </div>
+
+            <!-- logo L6 adishgears-->
+            <div style="width: 100px; height: auto;">
+                <a href="https://www.aadishgears.com/">
+                    <img class="logo-for-hover" src="/assets/image/sponsors_image/HYP LOGO/adish_gears.png">
+                </a>
+            </div>
+
+
+
+
+
+         </div>
+    </div>
+
+
+    
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- posts of stes hyperion -->
 
 
 
-
-<!-- About stes hyperion -->
-<div class="about-content">
-
-    <!-- 1 -->
-    <div class="about">
-        <!-- inner title -->
-        <div class="atitle">
-            <h1>|ABOUT US|</h1>
-        </div>
-        <!-- inner content -->
-        <div>
-            <p>Team STES Hyperion is a Student-led Team from the Sinhgad Technical
-                Education Society in Pune, India, dedicated to design, build, and race a
-                next-generation Solar Vehicle.
-            </p>
-        </div>
-    </div>
-
-    <!-- 2 -->
-    <div class="about">
-        <!-- inner title -->
-        <div class="atitle">
-            <h1>|MISSION|</h1>
-        </div>
-        <!-- inner content -->
-        <div>
-            <p>Team STES Hyperion is a Student-led Team from the Sinhgad Technical
-                Education Society in Pune, India, dedicated to design, build, and race a
-                next-generation Solar Vehicle.
-            </p>
-        </div>
-    </div>
-
-    <!-- 3 -->
-    <div class="about">
-        <!-- inner title -->
-        <div class="atitle">
-            <h1>|GOAL|</h1>
-        </div>
-        <!-- inner content -->
-        <div>
-            <p>Team STES Hyperion is a Student-led Team from the Sinhgad Technical
-                Education Society in Pune, India, dedicated to design, build, and race a
-                next-generation Solar Vehicle.
-            </p>
-        </div>
-    </div>
-
-</div>

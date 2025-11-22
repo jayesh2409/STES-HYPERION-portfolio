@@ -12,6 +12,12 @@
       height: 100vh;
       width: 100vw;
       background-image: url('/assets/image/home_images/hmbg.jpg'); /* replace with your image path */
+      background-color: rgba(0, 0, 0, 0.4);
+      background-blend-mode: multiply;
+
+
+
+      /* rgba(0, 0, 0, 0.4); */
       background-size: cover;     /* makes image cover full screen */
       background-position: center; /* centers the image */
       background-repeat: no-repeat; /* avoids repeating */
@@ -37,12 +43,121 @@ h1 {
 
 }
 
+
+.img-border{
+ padding-top: 10px;
+ padding-bottom: 10px;
+ border-top: 2px solid rgb(65, 65, 65);
+ border-bottom: 2px solid black;
+}
+
+
+
+.stes{
+  display: flex;
+  flex-direction: row;
+}
+
+.stes-image{
+  height: auto;
+  width: 375px;
+  
+  padding-left: 0px;
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.stes-info{
+  padding: 40px;
+  text-align: justify;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.mission-title{
+  /* font-family: 'Poppins', sans-serif !important; */
+  font-family: 'Orbitron', sans-serif !important;
+  padding-top:40px;
+  text-align: center;
+  font-size:xx-large;
+  font-weight: 600;
+}
+
+
+.mission-blocks{
+  display: flex;
+  flex-direction: row;
+  /* padding: 60px; */
+}
+
+.mission-blocks-one{
+  padding: 40px;
+  text-align: justify;
+  font-family: 'Poppins', sans-serif !important;
+  /* border: 2px solid black; */
+}
+
+.mission-blocks-one-inside{
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.vehicle-image{
+  height: auto;
+  width: 375px;
+  
+  padding-left: 0px;
+  clip-path: polygon(0 0, 90% 0, 75% 100%, 0 100%);
+}
+
+.about-info-inside{
+  padding: 40px;
+  text-align: justify;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.about-vehicles{
+  display: flex;
+  flex-direction: row;
+}
+
+.about-team{
+  display: flex;
+  flex-direction: row;
+}
+
+.about-team-info{
+  padding: 40px;
+  text-align: justify;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.about-team-image{
+  height: auto;
+  width: 375px;
+  
+  padding-left: 0px;
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+
+}
+
+.team-members{
+  display: flex;
+  flex-direction: row;
+}
+
+.team-image{
+  height: auto;
+  width: 375px; 
+  padding-left: 0px;
+  clip-path: polygon(0 0, 90% 0, 75% 100%, 0 100%);
+}
+
 .about-content{
-      width: 100%;
+      width: 100vw;
       height: auto;
-      background-image: url('/assets/image/home_images/homepage_bg.jpg');
-      background-size: 100% auto; /* Full width, auto height */
-      background-repeat: no-repeat;
+      background-color: black;
+      /* background-image: url('/assets/image/home_images/homepage_bg.jpg'); */
+      /* background-size: 100% auto; Full width, auto height */
+      /* background-repeat: no-repeat; */
       /* background-position: center top; */
       color: white;
       padding: 20px;
@@ -55,22 +170,68 @@ h1 {
   background-color: rgba(0, 0, 0, 0.44);
   border: 2px solid white;
   border-radius: 8px;
+  font-family: 'Poppins', sans-serif !important;
 }
 
-h1 .highlight {
-  line-height: 1.1;
-  display: block;    /* forces new line */
-  font-size: 5rem;   /* larger size */
-  font-weight: bold; /* bold */
+.vehicles-tab{
+  transition: background-color 0.3s ease; /* smooth animation */
+  border: 2px solid black;
+  padding: 5px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.highlight-sentence{
-      font-family: 'Kings', serif;
-      font-size: 1rem;
+.vehicles-tab:hover{
+  background-color: rgb(160, 0, 0);
+  color: white;
+  border: 2px solid rgb(63, 63, 63);
 }
+
+.sponsors-home{
+  font-family: 'Orbitron', sans-serif !important;
+  background-color: white;
+  
+}
+
+.sponsors-title-home{
+  font-size:xx-large;
+  font-weight: 600;
+}
+
+.sponsors-logo-home{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.logo-for-hover{
+  transition: 0.3s ease;
+  width: 100px;
+  height: 100px;
+}
+
+.logo-for-hover:hover{
+  /* filter: brightness(1.3); slightly lighter */
+  background-color: rgba(0, 0, 0, 0.149);
+  transform: scale(1.03);
+}
+
 
 /* Mobile view (max width 768px) */
 @media (max-width: 768px) {
+
+  .hyperion{
+    /* font-size: small; */
+    font-size: 50px; 
+    font-weight: 700;
+  }
+
+
+
+
+
   h1 {
     font-size: 1.5rem;  /* smaller STES */
   }
@@ -82,4 +243,69 @@ h1 .highlight {
   h1 .highlight-sentence{
       font-size: 0.8rem;
   }
+
+
+ .vehicle-image{
+  padding: 0px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+ }
+
+ .about-info-inside{
+  padding: 20px;
+ }
+
+ .about-vehicles{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .about-team{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .about-team-image{
+  padding: 0px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+ }
+
+
+ .mission-blocks{
+  display: flex;
+  flex-direction: column;
+ }
+
+
+ .team-members{
+  display: flex;
+  flex-direction: column;
+ }
+
+
+ .team-image{
+  padding: 0px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+ }
+
+ .stes{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .stes-image{
+  padding: 0px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+ }
+
+ .img-border{
+ /* padding-top: 10px;
+ padding-bottom: 10px; */
+ border-top: 0px solid rgb(65, 65, 65);
+ border-bottom: 0px solid black;
+ }
+
+
+ .sponsors-logo-home{
+  grid-template-columns: repeat(2, 1fr);
+ }
 }

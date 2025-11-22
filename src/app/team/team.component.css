@@ -1,7 +1,7 @@
 .team-body{
   display: block;
-  background: linear-gradient(135deg,#767676 0%, #000000 60%, gray 100%);
-  color: rgb(252, 252, 252);
+  background-color: white;
+  color: rgb(44, 44, 44);
   min-height: 100vh;
   width: 100%;
 }
@@ -14,33 +14,67 @@ html, body {
   font-family: Arial, sans-serif;
 }
 
-.blank{
-    min-height: 20px;
-    width: 100%;
-}
-
 .top-image{
-    background-image: url('/assets/image/team_image/japanese_countryside_evening.png'); /* your image */
+    background-image: url('/assets/image/team_image/2025team.JPG'); /* your image */
     background-size: cover;
     background-position: center;
-    height: 300px; /* how tall the image area is */
+    height: 650px; /* how tall the image area is */
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    padding-top: 0px;;
 }
 
-.title, .introduction{
-    text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+
+.main-full-block{
+  padding: 20px;
 }
 
-.title{
-    font-family: nebula;
-    font-size: xx-large;
+.main-full-block-border{
+  background-color: antiquewhite;
+  border: 2px solid black;
+  padding: 20px;
 }
-.introduction{
-    padding: 30px;
-    /* background: #805e5e; */
-    font-size: large;
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 784px) {
+    .top-image{
+        height: 300px;
+    }
+
+  .main-full-block{
+    padding: 10px;
+     align-items: center;
+    justify-content: center;
+  }
+
+  .main-full-block-border{
+    background-color: antiquewhite;
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+
 }

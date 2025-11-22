@@ -1,32 +1,218 @@
 <nav style=" padding:0;">
 
-  <div class="STESHYPERION" style="padding: 0px; padding-top: 10px; padding-left: 10px; border-bottom: 2px #fff;">
-    <img class="Hyperion-logo" src="/assets/image/sponsors_image/HYP LOGO/revival white .png" alt="SCOELOGO" style="min-width: 70px;
-  max-height: 60px;">
+
+
+
+  <!-- images -->
+
+
+  <div style="display:flex; flex-direction: row;">
+
+    <div class="STESHYPERION" style="padding: 0px; padding-top: 10px; padding-left: 10px; padding-right: 4px; border-bottom: 2px #fff;">
+      <img class="Hyperion-logo" src="/assets/image/sponsors_image/HYP LOGO/revival white .png" alt="SCOELOGO" style="min-width: 60px;
+    max-height: 52px;">
+    </div>
+
+
+    <div class="divide" style="padding-top: 6px;">
+      <div class="divide-inside" style="height: 80%; width: 1px; background-color: #b9b7b7; padding-top: 8px; padding-bottom: px;">
+
+      </div>
+    </div>
+
+    <div class="Sinhgad" style="padding: 0px; padding-top: 5px; padding-right: 10px; padding-left: 4px;">
+      <img class="SCOE-logo" src="/assets/image/sponsors_image/HYP LOGO/SCOE WHITE LOGO.png" alt="SCOELOGO" style="min-width: 60px;
+    max-height: 61px;">
+    </div>
+  </div>
+
+
+
+
+  <div class="h">
+    <div class="hamburger" (click)="toggleMenu()">☰</div>
   </div>
 
   <div class="tabs" style="font-size: small;">
     <a class="child" routerLink="" routerLinkActive="active">HOME</a>
-    <a class="child" routerLink="about" routerLinkActive="active">ABOUT</a>
-    <a class="child" routerLink="team" routerLinkActive="active">TEAM</a>
+      <a class="child" routerLink="team" routerLinkActive="active">TEAM</a>
+    <a class="child" routerLink="about" routerLinkActive="active">COMPETITIONS</a>
+     <a class="child" routerLink="vehicles" routerLinkActive="active">VEHICLES</a>
     <a class="child" routerLink="sponsors" routerLinkActive="active">SPONSORS</a>
-    <a class="child" routerLink="vehicles" routerLinkActive="active">VEHICLES</a>
     <a class="child" routerLink="contact" routerLinkActive="active">CONTACT</a>
   </div>
 
-  <div class="Sinhgad" style="padding: 0px; padding-top: 5px; padding-right: 10px;">
-    <img class="SCOE-logo" src="/assets/image/sponsors_image/HYP LOGO/SCOE WHITE LOGO.png" alt="SCOELOGO" style="min-width: 70px;
-  max-height: 65px;">
-  </div>
+  
 </nav>
 
 <div class="page-container">
   <router-outlet></router-outlet>
-  <footer style="background:#222; color:#fff; text-align:center; padding:20px;">
-    <div class="block1" style="align-items: left;">
-      <div class="sub-block1" style="height: auto;">
-        <p>&copy; 2025 STES Hyperion. All Rights Reserved.</p>
+
+
+  <footer>
+
+    <div class="footer-blocks">
+
+
+      <!-- Block 1 -->
+      <div class="footer-blocks-block">
+
+        <div>
+          <div style="text-align: left;">
+            <p>STES HYPERION</p>
+          </div>
+        </div>
+
+        <div style="color: #b9b7b7; padding-top: 20px; padding-bottom: 30px;">
+          <p>
+              Team STES Hyperion is a leading Solar Electric Vehicle Manufacturing Team of Sinhgad Institutes
+          </p>
+        </div>
+
+
+        <div>
+          <p style="padding-bottom: 20px;">REACH US</p>
+          <div class="social-media-icons" style="display: flex; flex-direction: row; gap: 40px; justify-content: left;">
+
+            <!-- INSTAGRAM -->
+            <a
+                href="https://www.instagram.com/team.hyperion?igsh=MTlheTZsN2k0NTk3Nw%3D%3D&utm_source=qr"
+                target="_blank"
+                aria-label="Instagram"
+                >
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <!-- LINKED IN -->
+            <a
+                href="https://www.linkedin.com/company/teamhyperion/"
+                target="_blank"
+                aria-label="LinkedIn"
+                >
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+
+            <!-- YOUTUBE -->
+            <a
+                href="https://youtube.com/@teamhyperion441?si=UqNQA3vcx1cAfiVI"
+                target="_blank"
+                aria-label="YouTube"
+                >
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+
+          </div>
+          
+        </div>
+
+
+        <div>
+          <div style="padding-top: 20px;">
+            <p>
+              CONTACT US
+            </p>
+          </div>
+
+          <div style="padding-top: 20px;">
+            <p style="font-size: small;">
+              Mugdha Ganu
+            </p>
+            <p style="font-size: small; color: #b9b7b7;">
+              1234567890
+            </p>
+          </div>
+
+          <div style="padding-top: 20px;">
+            <p style="font-size: small;">
+              Aniket Sapkale
+            </p>
+            <p style="font-size: small; color: #b9b7b7;">
+              7447257297
+            </p>
+          </div>
+
+        </div>
+
+
       </div>
+
+
+      
+      <!-- Block 2 -->
+      <div class="footer-blocks-block">
+
+
+        <div>
+
+          <div>
+            <p>LOCATION</p>
+          </div>
+
+          <div style="color: #b9b7b7; padding-top: 20px; padding-bottom: 30px;">
+            <p>
+              Mechanical Department, SINHGAD TECHNICAL EDUCATION SOCIETY, Sinhgad Institute Rd, Vadgaon Budruk, Pune, Maharashtra 411041
+            </p>
+          </div>
+
+          <div>
+            
+              <p>
+                MAIL
+              </p>
+               
+              <div style="color: #b9b7b7;">
+                <a>
+                  teamhyperion.scoe&#64;gmail.com
+                </a>
+              </div>
+          </div>
+
+        </div>
+
+        
+      </div>
+
+
+
+
+      
+      <!-- Block 3 -->
+      <div class="footer-blocks-block">
+        
+
+
+        
+
+
+        <a
+            href="https://maps.google.com?q=Sinhgad+College+of+Engineering,+Vadgaon+Budruk,+Pune"
+            target="_blank"
+            style="display:block; width:100%; max-width:800px;"
+            >
+            <iframe
+              src="https://maps.google.com/maps?q=Team+Hyperion+Sinhgad+College+of+Engineering,+Vadgaon+Budruk,+Pune&output=embed"
+              width="100%"
+              height="300"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+        </a>
+
+        <p style="text-align:center;">
+          Team Hyperion<br>
+          Sinhgad College of Engineering, Pune - 411041
+        </p>
+
+
+
+
+
+      </div>
+
     </div>
+
   </footer>
 </div>

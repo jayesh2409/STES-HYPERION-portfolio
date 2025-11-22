@@ -29,7 +29,16 @@ nav {
   font-size: larger;
 }
 
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+}
+
 .tabs {
+  font-family: 'Orbitron', sans-serif !important;
   display: flex;
   justify-content: center; /* center horizontally */
   align-items: center;     /* center vertically */
@@ -38,7 +47,8 @@ nav {
 
 .tabs .child{
   /* border: 1.5px solid rgba(239, 239, 239, 0.756); adds a black border */
-  padding: 2px;
+  gap: 40px;
+  /* padding: 2px; */
   /* padding-left: 2px;
   padding-right: 5px; */
   margin: 5px;
@@ -47,10 +57,12 @@ nav {
 .child{
   padding-left: 3px;
   padding-right: 3px;
+  transition: transform 0.3s ease;
 }
 
 .child:hover{
   color: rgb(255, 80, 80);
+  transform: scale(1.1);
 }
 
 nav .nav-container {
@@ -93,6 +105,7 @@ main {
 
 /* Footer */
 footer {
+  padding:20px;
   background: #222;
   color: #fff;
   text-align: center;
@@ -104,8 +117,48 @@ footer {
   z-index: 1000;
 }
 
+/* footer content only START */
+.footer-blocks{
+  display: flex;
+  font-family: 'Poppins', sans-serif !important;
+  flex-direction: row;
+  text-align: justify;
+  gap: 40px;
+}
+
+.footer-blocks-block{
+  height: auto;
+  width: 100%;
+  padding: 40px;
+  /* background-color: aqua; */
+}
+
+.social-media-icons a{
+  color: white;
+  font-size: 19px;
+}
+
+.social-media-icons a:hover {
+  color: #fb3d60; /* Instagram */
+
+  font-size: 20px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+
+
+
+
+/* footer content only END */
+
+
+
+
+
 /* Responsive adjustments */
 @media (max-width: 600px) {
+
   nav .nav-container {
     flex-direction: column;
   }
@@ -113,4 +166,55 @@ footer {
     width: 80%;
     text-align: center;
   }
+
+
+
+  /* footer content only START */
+  .footer-blocks{
+    display: flex;
+    flex-direction: column;
+    padding-right: 70px;
+  }
+
+
+  .tabs {
+    display: none; /* hide tabs by default */
+    flex-direction: column;
+    width: 40%;
+    background-color: #33333354;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    /* padding: 10px 0; */
+  }
+
+  .tabs.active {
+    display: flex; /* show tabs when active */
+  }
+
+  .hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block; /* show hamburger on mobile */
+    color: white;
+    padding: 10px;
+  }
+
+  .h{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align:center;
+  }
+
+  .tabs a {
+    padding: 6px;
+    border-top: 1px solid #444;
+    color: white;
+    text-decoration: none;
+  }
+
+
+  /* footer content only END */
 }
