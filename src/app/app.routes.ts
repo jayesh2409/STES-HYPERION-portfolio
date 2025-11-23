@@ -5,6 +5,7 @@ import { TeamComponent } from './team/team.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
 import { ContactComponent } from './contact/contact.component';
+import { RecruitmentComponent } from './recruitment/recruitment.component';
 
 import { Infiniti1oComponent } from './vehicles/infiniti1o/infiniti1o.component';
 import { Infiniti2oComponent } from './vehicles/infiniti2o/infiniti2o.component';
@@ -22,6 +23,7 @@ export const routes: Routes = [
   { path: 'team', component: TeamComponent },
   { path: '', redirectTo: 'team', pathMatch: 'full' },
   { path: 'about', component: AboutComponent },
+  { path: 'recruitment', component: RecruitmentComponent },
   { path: 'team', component: TeamComponent },
   { path: 'sponsors', component: SponsorsComponent },
   {

@@ -63,6 +63,8 @@ nav {
 .child:hover{
   color: rgb(255, 80, 80);
   transform: scale(1.1);
+  font-weight:700;
+  /* text-decoration: underline; */
 }
 
 nav .nav-container {
@@ -138,8 +140,20 @@ footer {
   font-size: 19px;
 }
 
+.social-media-icons-linkedin a{
+  color: white;
+  font-size: 19px;
+}
+
+.social-media-icons-linkedin a:hover{
+  color: #1f2afe; /* Linkedin */
+  font-size: 20px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
 .social-media-icons a:hover {
-  color: #fb3d60; /* Instagram */
+  color: #fb3d60; /* Instagram, Youtube*/
 
   font-size: 20px;
   transition: color 0.3s ease;
