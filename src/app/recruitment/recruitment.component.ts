@@ -10,5 +10,24 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./recruitment.component.css']
 })
 export class RecruitmentComponent {
+  
+
+  overlayIsActive : number | null = null;
+
+  displayOverlay(l: number | null){
+    this.overlayIsActive = l;
+  }
+
+
+
+
+
+
+  // begins for subsystems
+  activeOverlay : number | null = null;
+
+  showOverlay(n: number | null){
+    this.activeOverlay = n;
+  }
 
 }

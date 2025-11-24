@@ -3,12 +3,101 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- main bg page started-->
 
 
 
 <!-- ---------------------------------STARTED---------------------------------- -->
-<div style="display: flex; flex-direction: row;">
+<div style="display: flex; flex-direction: row; border-top: 2px solid black;">
 
     <!-- --------------------------------------------------------------------------- -->
     <!-- make them display flex and in row -->
@@ -16,56 +105,112 @@
 
 
     <!-- -------------------------------------LIST SUBSYSTEMS---------------------------------------- -->
-    <div style="background-color: aqua; height: 600px; width: 30%; align-items: center; justify-content: center;">
+    <div style="background-color: rgb(255, 90, 39); height: 600px; width: 30%; align-items: center; justify-content: center;">
 
         <!-- --------MAKING COLUMNS---------- -->
-        <div style="padding-top: 100px; display:flex; flex-direction: column; justify-content: center; align-items: center;">
-            <div>
-                <a>STEERING</a>
+        <div style="gap: 15px; padding-top: 100px; display:flex; flex-direction: column; justify-content: center; align-items: center;">
+
+            <div class="system">
+                <a (mouseenter)="showOverlay(1)" (mouseleave)="showOverlay(null)">STEERING</a>
             </div>
             
-            <div>
-                <a>SUSPENSION</a>
+            <div class="system">
+                <a (mouseenter)="showOverlay(2)" (mouseleave)="showOverlay(null)">SUSPENSION</a>
             </div>
 
-            <div>
-                <a>CAE</a>
+            <div class="system">
+                <a (mouseenter)="showOverlay(3)" (mouseleave)="showOverlay(null)">CAE</a>
             </div>
 
-            <div>
-                <a>DESIGN</a>
+            <div class="system">
+                <a (mouseenter)="showOverlay(4)" (mouseleave)="showOverlay(null)">DESIGN</a>
             </div>
 
-            <div>
-                <a>BRAKING</a>
+            <div class="system">
+                <a (mouseenter)="showOverlay(5)" (mouseleave)="showOverlay(null)">BRAKING</a>
             </div>
 
-            <div>
-                <a>TRANSMISSION</a>
+            <div class="system">
+                <a (mouseenter)="showOverlay(6)" (mouseleave)="showOverlay(null)">TRANSMISSION</a>
             </div>
 
-            <div>
-                <a>ELECTRICAL</a>
+            <div class="system">
+                <a (mouseenter)="showOverlay(7)" (mouseleave)="showOverlay(null)">ELECTRICAL</a>
             </div>
 
-            <div>
-                <a>SOLAR</a>
+            <div class="system">
+                <a (mouseenter)="showOverlay(8)" (mouseleave)="showOverlay(null)">SOLAR</a>
             </div>
 
-            <div>
-                <a>AUTONOMOUS DRIVING</a>
+            <div class="system">
+                <a (mouseenter)="showOverlay(9)" (mouseleave)="showOverlay(null)">AUTONOMOUS</a>
             </div>
 
-            <div>
-                <a>MEDIA</a>
+            <div class="system">
+                <a (mouseenter)="showOverlay(10)" (mouseleave)="showOverlay(null)">MEDIA</a>
             </div>
 
         </div>
     </div>
 
     <!-- Information inside circle -->
-    <div style="align-items:center; display: flex; flex-direction: column; justify-content: center; background-color: rgb(121, 255, 44); height: 600px; width: 70%;">
+    <div style="align-items:center; display: flex; flex-direction: column; justify-content: center; background-color: rgb(255, 255, 255); height: 600px; width: 70%;">
         <!-------------------------------------CIRCLE STARTED--------------------------------------- -->
-        <div style="height: 550px; width: 550px; background-color: yellow; border: 3px solid black; border-radius: 50%;"></div>
+        <div style="height: 550px; width: 550px; background-color: rgb(255, 255, 255); border: 3px solid black; border-radius: 50%;  display: flex; justify-content: center; align-items: center;">
+
+
+            <div class="functioning" *ngIf="activeOverlay === null">
+                ALL SUB SYSTEMS IN HYPERION
+            </div>
+
+            <div class="functioning" *ngIf="activeOverlay === 1">
+                STEERING
+            </div>
+            
+            
+            <div class="functioning" *ngIf="activeOverlay === 2">
+                SUSPENSION
+            </div>
+            
+            
+            <div class="functioning" *ngIf="activeOverlay === 3">
+                CAE
+            </div>
+            
+            
+            <div class="functioning" *ngIf="activeOverlay === 4">
+                DESIGN
+            </div>
+            
+            
+            <div class="functioning" *ngIf="activeOverlay === 5">
+                BRAKING
+            </div>
+            
+            
+            <div class="functioning" *ngIf="activeOverlay === 6">
+                TRANSMISSION
+            </div>
+            
+            
+            <div class="functioning" *ngIf="activeOverlay === 7">
+                ELECTRICAL
+            </div>
+            
+            
+            <div class="functioning" *ngIf="activeOverlay === 8">
+                SOLAR
+            </div>
+            
+            
+            <div class="functioning" *ngIf="activeOverlay === 9">
+                AUTONOMOUS DRIVING
+            </div>
+            
+            
+            <div class="functioning" *ngIf="activeOverlay === 10">
+                MEDIA
+            </div>
+        </div>
     </div>
 </div>
