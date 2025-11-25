@@ -26,8 +26,17 @@ export class RecruitmentComponent {
   // begins for subsystems
   activeOverlay : number | null = null;
 
+  hideTimeout: any;
+
   showOverlay(n: number | null){
+    clearTimeout(this.hideTimeout);
     this.activeOverlay = n;
   }
 
+
+  hideOverlayWithDelay() {
+    this.hideTimeout = setTimeout(() => {
+      this.activeOverlay = null;
+    }, 2000); // 2000ms = 2 seconds delay
+  }
 }

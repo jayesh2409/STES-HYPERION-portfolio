@@ -105,58 +105,67 @@
 
 
     <!-- -------------------------------------LIST SUBSYSTEMS---------------------------------------- -->
-    <div style="background-color: rgb(255, 90, 39); height: 600px; width: 30%; align-items: center; justify-content: center;">
+    <div style="gap:20px ;display: flex; flex-direction: column; background-color: rgb(255, 151, 39); height: 600px; width: 30%; align-items: center; justify-content: center;">
 
-        <!-- --------MAKING COLUMNS---------- -->
-        <div style="gap: 15px; padding-top: 100px; display:flex; flex-direction: column; justify-content: center; align-items: center;">
+        <!-- --------MAKING COLUMNS--------- -->
+        <div style="gap: 20px; padding-top: 30px; display:flex; flex-direction: column; justify-content: center; align-items: center;">
 
             <div class="system">
-                <a (mouseenter)="showOverlay(1)" (mouseleave)="showOverlay(null)">STEERING</a>
+                <a (mouseenter)="showOverlay(1)" (mouseleave)="hideOverlayWithDelay()">STEERING</a>
             </div>
             
             <div class="system">
-                <a (mouseenter)="showOverlay(2)" (mouseleave)="showOverlay(null)">SUSPENSION</a>
+                <a (mouseenter)="showOverlay(2)" (mouseleave)="hideOverlayWithDelay()">SUSPENSION</a>
             </div>
 
             <div class="system">
-                <a (mouseenter)="showOverlay(3)" (mouseleave)="showOverlay(null)">CAE</a>
+                <a (mouseenter)="showOverlay(3)" (mouseleave)="hideOverlayWithDelay()">CAE</a>
             </div>
 
             <div class="system">
-                <a (mouseenter)="showOverlay(4)" (mouseleave)="showOverlay(null)">DESIGN</a>
+                <a (mouseenter)="showOverlay(4)" (mouseleave)="hideOverlayWithDelay()">DESIGN</a>
             </div>
 
             <div class="system">
-                <a (mouseenter)="showOverlay(5)" (mouseleave)="showOverlay(null)">BRAKING</a>
+                <a (mouseenter)="showOverlay(5)" (mouseleave)="hideOverlayWithDelay()">BRAKING</a>
             </div>
 
             <div class="system">
-                <a (mouseenter)="showOverlay(6)" (mouseleave)="showOverlay(null)">TRANSMISSION</a>
+                <a (mouseenter)="showOverlay(6)" (mouseleave)="hideOverlayWithDelay()">TRANSMISSION</a>
             </div>
 
             <div class="system">
-                <a (mouseenter)="showOverlay(7)" (mouseleave)="showOverlay(null)">ELECTRICAL</a>
+                <a (mouseenter)="showOverlay(7)" (mouseleave)="hideOverlayWithDelay()">ELECTRICAL</a>
             </div>
 
             <div class="system">
-                <a (mouseenter)="showOverlay(8)" (mouseleave)="showOverlay(null)">SOLAR</a>
+                <a (mouseenter)="showOverlay(8)" (mouseleave)="hideOverlayWithDelay()">SOLAR</a>
             </div>
 
             <div class="system">
-                <a (mouseenter)="showOverlay(9)" (mouseleave)="showOverlay(null)">AUTONOMOUS</a>
+                <a (mouseenter)="showOverlay(9)" (mouseleave)="hideOverlayWithDelay()">AUTONOMOUS</a>
             </div>
 
             <div class="system">
-                <a (mouseenter)="showOverlay(10)" (mouseleave)="showOverlay(null)">MEDIA</a>
+                <a (mouseenter)="showOverlay(10)" (mouseleave)="hideOverlayWithDelay()">MEDIA</a>
             </div>
 
         </div>
+
+
+        <!-- --------------------------------------------Recruitment link------------------------------------------------------- -->
+        <div style="border: 2px solid black; height: 30px; width: 300px; align-items: center; display: flex; flex-direction: column; justify-content: center;">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJilmm3gLGQkT_OffeSMjEvF-sFZZhIz1hJn8D20SrD1ZdSQ/viewform">
+                RECRUITMENT FORM
+            </a>
+        </div>
+
     </div>
 
     <!-- Information inside circle -->
     <div style="align-items:center; display: flex; flex-direction: column; justify-content: center; background-color: rgb(255, 255, 255); height: 600px; width: 70%;">
         <!-------------------------------------CIRCLE STARTED--------------------------------------- -->
-        <div style="height: 550px; width: 550px; background-color: rgb(255, 255, 255); border: 3px solid black; border-radius: 50%;  display: flex; justify-content: center; align-items: center;">
+        <div style="height: 550px; width: 550px; background-color: rgb(255, 255, 255); border: 2px solid black; border-radius: 50%;  display: flex; justify-content: center; align-items: center;">
 
 
             <div class="functioning" *ngIf="activeOverlay === null">
