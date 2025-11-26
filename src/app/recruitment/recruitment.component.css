@@ -11,18 +11,78 @@ a{
 }
 
 .system{
-    font-family: 'Orbitron', sans-serif !important;
-    font-size: large;
-    color: rgb(255, 255, 64);
-    font-weight: 600;
+
+  background: #333;
+  font-family: Consolas, Courier New, monospace;
+  border: solid #404c5d 1px;
+  font-size: 16px;
+  color: rgb(161, 161, 161);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #2e2d2d, #212121);
+  -webkit-box-shadow: -1px -5px 1px #41465b, 5px 5px 1px #41465b,
+    inset 5px 5px 1px #212121, inset -5px -5px 1px #212121;
+  box-shadow: -1px -1px 1px #41555b, 5px 1px 1px #1af0ff,
+    inset 5px 5px 1px #212121, inset -5px -5px 1px #212121;
+    width: 200px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+
+    /* font-family: 'Orbitron', sans-serif !important; */
+    /* font-size: large; */
+    /* color: rgb(0, 0, 0); */
+    /* font-weight: 600;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    border: 2px solid black;
-    background: linear-gradient(135deg, rgb(255, 32, 16), rgb(27, 0, 230));
-    width: 200px;
+    align-items: center; */
+    /* border: 2px solid black; */
+    /* background: linear-gradient(90deg, rgb(167, 11, 0), rgb(169, 22, 0)); */
+    /* width: 200px;
     height: auto;
     cursor: pointer;
-    transition: ease (0.3s);
+    transition: ease (0.3s); */
+}
+
+.system:hover{
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  box-shadow: 1px 1px 1px #20232e, -1px -1px 1px #46e3ff;
+  color: #d6d6d6;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.system:active {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  box-shadow: 1px 1px 13px #00eaff, -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+
+.recruitment{
+  background-color: dodgerblue;
+  border: transparent;
+  border-radius: 5px;
+  font-family: Consolas, Courier New, monospace;
+  font-weight:bolder;
+  font-size: larger;
+
+  height: 40px;
+  
+  
+  width: 250px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.recruitment:hover{
+  
 }
