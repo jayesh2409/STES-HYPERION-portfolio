@@ -185,16 +185,21 @@ h1 {
 
 .vehicles-tab{
   transition: background-color 0.3s ease; /* smooth animation */
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  color: rgb(255, 255, 255);
   padding: 5px;
   text-decoration: none;
   cursor: pointer;
+  background-color: rgb(68, 162, 255);
+  border: transparent;
+  border-radius: 3px;
 }
 
 .vehicles-tab:hover{
-  background-color: rgb(163, 0, 0);
-  color: white;
-  border: 2px solid rgb(63, 63, 63);
+  background-color: dodgerblue;
+  color: rgb(231, 231, 231);
+  border: transparent;
+  border-radius: 3px;
 }
 
 .sponsors-home{

@@ -98,57 +98,125 @@
 
 <!-- ---------------------------------STARTED---------------------------------- -->
 <div style="display: flex; flex-direction: row; border-top: 2px solid black;">
-
+    
     <!-- --------------------------------------------------------------------------- -->
     <!-- make them display flex and in row -->
 
 
 
     <!-- -------------------------------------LIST SUBSYSTEMS---------------------------------------- -->
-    <div style="gap:20px ;padding-top: 0px; display: flex; flex-direction: column; background-color: rgb(44, 44, 44); height: 600px; width: 30%; align-items: center; justify-content: center;">
+    <div style="gap:20px ;padding-top: 0px; display: flex; flex-direction: column; background-color: rgb(44, 44, 44); height: 600px; width: 25%; align-items: center; justify-content: center;">
+
+
+        <!-- sponsors as a title -->
+        <div class="title-subsyst">
+            SUBSYSTEMS
+        </div>
+
+
 
         <!-- --------MAKING COLUMNS--------- -->
-        <div style="gap: 20px; padding-top: 0px; display:flex; flex-direction: column; justify-content: center; align-items: center;">
+        <div style="width: 250px; gap: 20px; padding-top: 0px; display:flex; flex-direction: column; justify-content: center; align-items: left;">
 
-            <div class="system">
-                <a (mouseenter)="showOverlay(1)" (mouseleave)="hideOverlayWithDelay()">STEERING</a>
+            <!-- ============================STEERING button and pointer======================== -->
+            <div class="your-btn" style="display: flex; flex-direction: row; gap: 30px;">
+                <div class="system A">
+                    <a (mouseenter)="showOverlay(1)" (mouseleave)="hideOverlayWithDelay()">STEERING</a>
+                </div>
+
+                <div class="triangle" *ngIf="activeOverlay === 1"></div>
             </div>
+
             
-            <div class="system">
-                <a (mouseenter)="showOverlay(2)" (mouseleave)="hideOverlayWithDelay()">SUSPENSION</a>
+            <!-- ============================SUSPENSION button and pointer======================== -->
+            <div class="your-btn" style="display: flex; flex-direction: row; gap: 30px;">
+                <div class="system A">
+                    <a (mouseenter)="showOverlay(2)" (mouseleave)="hideOverlayWithDelay()">SUSPENSION</a>
+                </div>
+
+                <div class="triangle" *ngIf="activeOverlay === 2"></div>
             </div>
 
-            <div class="system">
-                <a (mouseenter)="showOverlay(3)" (mouseleave)="hideOverlayWithDelay()">CAE</a>
+            
+            <!-- ============================CAE button and pointer======================== -->
+            <div class="your-btn" style="display: flex; flex-direction: row; gap: 30px;">
+                <div class="system A">
+                    <a (mouseenter)="showOverlay(3)" (mouseleave)="hideOverlayWithDelay()">CAE</a>
+                </div>
+
+                <div class="triangle" *ngIf="activeOverlay === 3"></div>
             </div>
 
-            <div class="system">
-                <a (mouseenter)="showOverlay(4)" (mouseleave)="hideOverlayWithDelay()">DESIGN</a>
+            
+            <!-- ============================DESIGN button and pointer======================== -->
+            <div class="your-btn" style="display: flex; flex-direction: row; gap: 30px;">
+                <div class="system A">
+                    <a (mouseenter)="showOverlay(4)" (mouseleave)="hideOverlayWithDelay()">DESIGN</a>
+                </div>
+
+                <div class="triangle" *ngIf="activeOverlay === 4"></div>
             </div>
 
-            <div class="system">
-                <a (mouseenter)="showOverlay(5)" (mouseleave)="hideOverlayWithDelay()">BRAKING</a>
+            
+            <!-- ============================BRAKING button and pointer======================== -->
+            <div class="your-btn" style="display: flex; flex-direction: row; gap: 30px;">
+                <div class="system A">
+                    <a (mouseenter)="showOverlay(5)" (mouseleave)="hideOverlayWithDelay()">BRAKING</a>
+                </div>
+
+                <div class="triangle" *ngIf="activeOverlay === 5"></div>
             </div>
 
-            <div class="system">
-                <a (mouseenter)="showOverlay(6)" (mouseleave)="hideOverlayWithDelay()">TRANSMISSION</a>
+
+            <!-- ============================TRANSMISSION button and pointer======================== -->
+            <div class="your-btn" style="display: flex; flex-direction: row; gap: 30px;">
+                <div class="system A">
+                    <a (mouseenter)="showOverlay(6)" (mouseleave)="hideOverlayWithDelay()">TRANSMISSION</a>
+                </div>
+
+                <div class="triangle" *ngIf="activeOverlay === 6"></div>
             </div>
 
-            <div class="system">
-                <a (mouseenter)="showOverlay(7)" (mouseleave)="hideOverlayWithDelay()">ELECTRICAL</a>
+
+            <!-- ============================ELECTRICAL button and pointer======================== -->
+            <div class="your-btn" style="display: flex; flex-direction: row; gap: 30px;">
+                <div class="system A">
+                    <a (mouseenter)="showOverlay(7)" (mouseleave)="hideOverlayWithDelay()">ELECTRICAL</a>
+                </div>
+
+                <div class="triangle" *ngIf="activeOverlay === 7"></div>
             </div>
 
-            <div class="system">
-                <a (mouseenter)="showOverlay(8)" (mouseleave)="hideOverlayWithDelay()">SOLAR</a>
+
+            <!-- ============================SOLAR button and pointer======================== -->
+            <div class="your-btn" style="display: flex; flex-direction: row; gap: 30px;">
+                <div class="system A">
+                    <a (mouseenter)="showOverlay(8)" (mouseleave)="hideOverlayWithDelay()">SOLAR</a>
+                </div>
+
+                <div class="triangle" *ngIf="activeOverlay === 8"></div>
             </div>
 
-            <div class="system">
-                <a (mouseenter)="showOverlay(9)" (mouseleave)="hideOverlayWithDelay()">AUTONOMOUS</a>
+
+            <!-- ============================AUTONOMOUS button and pointer======================== -->
+            <div class="your-btn" style="display: flex; flex-direction: row; gap: 30px;">
+                <div class="system A">
+                    <a (mouseenter)="showOverlay(9)" (mouseleave)="hideOverlayWithDelay()">AUTONOMOUS</a>
+                </div>
+
+                <div class="triangle" *ngIf="activeOverlay === 9"></div>
             </div>
 
-            <div class="system">
-                <a (mouseenter)="showOverlay(10)" (mouseleave)="hideOverlayWithDelay()">MEDIA</a>
+
+            <!-- ============================MEDIA button and pointer======================== -->
+            <div class="your-btn" style="display: flex; flex-direction: row; gap: 30px;">
+                <div class="system A">
+                    <a (mouseenter)="showOverlay(10)" (mouseleave)="hideOverlayWithDelay()">MEDIA</a>
+                </div>
+
+                <div class="triangle" *ngIf="activeOverlay === 10"></div>
             </div>
+
 
         </div>
 
@@ -163,7 +231,7 @@
     </div>
 
     <!-- Information inside circle -->
-    <div style="align-items:center; display: flex; flex-direction: column; justify-content: center; background-color: rgb(255, 255, 255); height: 600px; width: 70%;">
+    <div style="align-items:center; display: flex; flex-direction: column; justify-content: center; background-color: rgb(255, 255, 255); height: 600px; width: 75%;">
         <!-------------------------------------CIRCLE STARTED--------------------------------------- -->
         <div style="height: 550px; width: 550px; background-color: rgb(255, 255, 255); border: 2px solid black; border-radius: 50%;  display: flex; justify-content: center; align-items: center;">
 

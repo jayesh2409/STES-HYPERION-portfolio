@@ -10,6 +10,13 @@ a{
     text-decoration: none;
 }
 
+.title-subsyst{
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(214, 214, 214);
+}
+
 .system{
 
   background: #333;
@@ -31,6 +38,8 @@ a{
     align-items: center;
     display: flex;
 
+    letter-spacing: 2px;
+
 
     /* font-family: 'Orbitron', sans-serif !important; */
     /* font-size: large; */
@@ -46,6 +55,11 @@ a{
     height: auto;
     cursor: pointer;
     transition: ease (0.3s); */
+}
+
+.A{
+  color: rgb(156, 156, 156);
+  /* -webkit-text-stroke: 0.5px rgb(255, 255, 255); border thickness + color */
 }
 
 .system:hover{
@@ -84,5 +98,22 @@ a{
 }
 
 .recruitment:hover{
-  
+  transition: 500ms;
+  background-color: rgb(44, 150, 255);
+  /* text-color: black; */
+}
+
+.triangle {
+  width: 15px;     /* size of triangle */
+  height: 15px;
+  background: dodgerblue; /* triangle color */
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+  ;
+}
+
+@media (max-width: 768px){
+    .triangle{
+      width: 0;
+      height: 0;
+    }
 }
