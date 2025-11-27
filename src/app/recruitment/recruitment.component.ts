@@ -37,6 +37,6 @@ export class RecruitmentComponent {
   hideOverlayWithDelay() {
     this.hideTimeout = setTimeout(() => {
       this.activeOverlay = null;
-    },2000); // 2000ms = 2 seconds delay
+    }, 400000); // 30000ms = 2 seconds delay
   }
 }

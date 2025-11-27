@@ -230,10 +230,15 @@
 
     </div>
 
-    <!-- Information inside circle -->
-    <div style="align-items:center; display: flex; flex-direction: column; justify-content: center; background-color: rgb(255, 255, 255); height: 600px; width: 75%;">
-        <!-------------------------------------CIRCLE STARTED--------------------------------------- -->
-        <div style="height: 550px; width: 550px; background-color: rgb(255, 255, 255); border: 2px solid black; border-radius: 50%;  display: flex; justify-content: center; align-items: center;">
+
+
+
+    <!-- Information inside -->
+    <div class="subsystem-full-overlay" style="align-items:center; display: flex; flex-direction: column; justify-content: center; background-color: rgb(255, 255, 255); height: 600px; width: 75%;">
+
+
+
+        
 
 
             <div class="functioning" *ngIf="activeOverlay === null">
@@ -249,15 +254,124 @@
                 SUSPENSION
             </div>
             
-            
+            <!-- ===============CAE overlay=================== -->
             <div class="functioning" *ngIf="activeOverlay === 3">
-                CAE
+
+                <div class="grid">
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/knuckle.jpg">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/swing_arm.jpg">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/pedal.jpg">
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="img">
+                        <video autoplay muted loop>
+                            <source src="/assets/recruitment/cae/cae_videos/impact2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+                    <!-- Center div -->
+                    <div class="empty">
+                        <p>
+                            COMPUTER AIDED ENGINEERING
+                        </p>
+                    </div> 
+
+                    <div class="img">
+                        <video autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+
+                    <!-- Row 3 -->
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/knuckle.jpg">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/knuckle.jpg">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/knuckle.jpg">
+                    </div>
+                     
+                </div>
             </div>
             
             
+            <!-- ===============DESIGN overlay=================== -->
             <div class="functioning" *ngIf="activeOverlay === 4">
-                DESIGN
+
+                <div class="grid">
+
+                    <div class="img">
+                        <img src="assets/recruitment/design/95th.png">
+                    </div>
+
+
+                    <div class="img">
+                        <img src="/assets/recruitment/design/bodyworks.png">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/design/chasis.png">
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="img">
+                        <video autoplay muted loop>
+                            <source src="/assets/recruitment/cae/cae_videos/impact2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+                    <!-- Center div -->
+                    <div class="empty">
+                        <p>
+                            DEIGN AND BODYWORKS
+                        </p>
+                    </div> 
+
+                    <div class="img">
+                        <video autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+
+                    <!-- Row 3 -->
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/knuckle.jpg">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/knuckle.jpg">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/knuckle.jpg">
+                    </div>
+                     
+                </div>
             </div>
+
             
             
             <div class="functioning" *ngIf="activeOverlay === 5">
@@ -288,6 +402,6 @@
             <div class="functioning" *ngIf="activeOverlay === 10">
                 MEDIA
             </div>
-        </div>
+        
     </div>
 </div>

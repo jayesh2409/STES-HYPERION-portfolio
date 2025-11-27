@@ -106,10 +106,64 @@ a{
 .triangle {
   width: 15px;     /* size of triangle */
   height: 15px;
-  background: dodgerblue; /* triangle color */
+  background: rgb(164, 223, 253); /* triangle color */
   clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
-  ;
 }
+
+
+.functioning{
+  height: 630px;
+  width: 800px;
+  /* padding: 0px; */
+}
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+  width: 100%;
+  gap: 20px;
+  place-items: center;
+}
+
+.grid img {
+  width: 100%;
+  height: 100%;
+  max-width: 220px;   /* Prevent images from becoming too large */
+  max-height: 230px;
+  object-fit: cover;
+}
+
+.img{
+  height: 101px;
+  width: 220px;
+}
+
+.img video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Keep center spot blank but same spacing */
+.empty {
+  width: 100%;
+  height: 100%;
+  max-width: 120px;
+  max-height: 120px;
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px){
     .triangle{
