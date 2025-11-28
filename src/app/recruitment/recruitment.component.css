@@ -114,7 +114,11 @@ a{
 .functioning{
   height: 630px;
   width: 800px;
+  position: relative; /* important */
   /* padding: 0px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -139,7 +143,21 @@ a{
 .img{
   height: 101px;
   width: 220px;
+  /* border: 2px turquoise; */
+  /* border-radius: 5px; */
 }
+
+img:hover {
+  filter:brightness(0.9);
+}
+
+/* img{
+  border-radius: 5px;
+}
+
+video{
+  border-radius: 5px;
+} */
 
 .img video {
   width: 100%;
@@ -150,11 +168,53 @@ a{
 
 /* Keep center spot blank but same spacing */
 .empty {
+
+  font-family: 'Orbitron', sans-serif !important;
+  font-weight: 900;
+  text-align:center;
+
   width: 100%;
   height: 100%;
-  max-width: 120px;
-  max-height: 120px;
+  max-width: 260px;
+  max-height: 220px;
+
+  border: 2px solid #20232e;
 }
+
+.overlay-bg {
+  width: 600px;
+  height: 500px;
+  position: absolute;  
+  top: 50%;
+  left: 50%;
+  max-width: 260px;
+  max-height: 220px;
+
+  transform: translate(-50%, -50%); /* centers it */
+  /* background-color: rgba(65, 105, 225, 0.344); */
+  /* z-index: 10; overlay */
+
+  /* position: fixed; */
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  cursor: zoom-out;
+}
+
+.open-image-or-video{
+  max-width: 260px;
+  max-height: 180px;
+}
+
+
+
+
+
+
+
 
 
 

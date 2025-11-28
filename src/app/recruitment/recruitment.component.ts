@@ -39,4 +39,52 @@ export class RecruitmentComponent {
       this.activeOverlay = null;
     }, 400000); // 30000ms = 2 seconds delay
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // .
+  showPreview = false;
+  currentSrc: string | null = null;
+  isImage = true;
+  timeoutRef: any;
+
+  openPreview(event: any) {
+    const element = event.target;
+    this.currentSrc = element.src;
+    this.isImage = element.tagName.toLowerCase() === 'img';
+
+    this.showPreview = true;
+
+    if (this.timeoutRef) clearTimeout(this.timeoutRef);
+
+    this.timeoutRef = setTimeout(() => {
+      this.closePreview();
+    }, 70000);
+  }
+
+  closePreview() {
+    this.showPreview = false;
+    this.currentSrc = null;
+  }
 }

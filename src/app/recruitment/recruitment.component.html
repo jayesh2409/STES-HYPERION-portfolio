@@ -240,31 +240,58 @@
 
         
 
+<!-- ===============ALL SUBSYSTEMS IN HYPERION overlay=================== -->
 
             <div class="functioning" *ngIf="activeOverlay === null">
                 ALL SUB SYSTEMS IN HYPERION
             </div>
 
+<!-- ===============STEERING overlay=================== -->
+
             <div class="functioning" *ngIf="activeOverlay === 1">
                 STEERING
             </div>
             
-            
+<!-- ===============SUSPENSION overlay=================== -->
+           
             <div class="functioning" *ngIf="activeOverlay === 2">
                 SUSPENSION
             </div>
             
-            <!-- ===============CAE overlay=================== -->
+<!-- ===============CAE overlay=================== -->
             <div class="functioning" *ngIf="activeOverlay === 3">
+
+
+                <!-- IMAGE CLICK OVERLAY start-->
+
+                <div *ngIf="showPreview" class="overlay-bg" (click)="closePreview()">
+
+                    <ng-container *ngIf="isImage">
+                        <img [src]="currentSrc" class="open-image-or-video abc" />
+                    </ng-container>
+
+                    <ng-container *ngIf="!isImage">
+                        <video [src]="currentSrc" class="open-image-or-video abc" autoplay muted controls></video>
+                    </ng-container>
+
+                </div>
+
+                <!-- IMAGE CLICK OVERLAY end -->
+
+                
 
                 <div class="grid">
 
+                    <!-- Row 1 -->
                     <div class="img">
-                        <img src="/assets/recruitment/cae/knuckle.jpg">
+                        <img src="/assets/recruitment/cae/knuckle.jpg" class="abc" (click)="openPreview($event)">
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/swing_arm.jpg">
+                        <video class="abc" (click)="openPreview($event)">
+                            <source src="/assets/recruitment/cae/cae_videos/impact3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
 
                     <div class="img">
@@ -298,22 +325,25 @@
 
                     <!-- Row 3 -->
                     <div class="img">
-                        <img src="/assets/recruitment/cae/knuckle.jpg">
+                        <img src="/assets/recruitment/cae/brakedisc.jpg">
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/knuckle.jpg">
+                        <img src="/assets/recruitment/cae/swing_arm.jpg">
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/knuckle.jpg">
+                        <img src="/assets/recruitment/cae/wishbone.jpg">
                     </div>
+
+                    
                      
                 </div>
+
             </div>
             
             
-            <!-- ===============DESIGN overlay=================== -->
+<!-- ===============DESIGN overlay=================== -->
             <div class="functioning" *ngIf="activeOverlay === 4">
 
                 <div class="grid">
@@ -373,32 +403,38 @@
             </div>
 
             
+<!-- ===============BRAKING overlay=================== -->
             
             <div class="functioning" *ngIf="activeOverlay === 5">
                 BRAKING
             </div>
             
-            
+<!-- ===============TRANSMISSION overlay=================== -->
+           
             <div class="functioning" *ngIf="activeOverlay === 6">
                 TRANSMISSION
             </div>
             
-            
+<!-- ===============ELECTRICAL overlay=================== -->
+ 
             <div class="functioning" *ngIf="activeOverlay === 7">
                 ELECTRICAL
             </div>
             
-            
+<!-- ===============SOLAR overlay=================== -->
+
             <div class="functioning" *ngIf="activeOverlay === 8">
                 SOLAR
             </div>
             
-            
+<!-- ===============AUTONOMOUS overlay=================== -->
+
             <div class="functioning" *ngIf="activeOverlay === 9">
                 AUTONOMOUS DRIVING
             </div>
             
-            
+<!-- ===============MEDIA overlay=================== -->
+           
             <div class="functioning" *ngIf="activeOverlay === 10">
                 MEDIA
             </div>
