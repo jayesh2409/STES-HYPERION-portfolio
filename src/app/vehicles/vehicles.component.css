@@ -9,7 +9,7 @@
 }
 
 .vehicle-navbar {
-  background: white;
+  background: rgb(26, 26, 26);
   border-bottom: 2px solid black;
   padding: 10px;
 }
@@ -45,21 +45,25 @@
 .v1 {
   font-family: 'Poppins', sans-serif !important;
   text-decoration: none;
-  color: black;
+  color: rgb(238, 237, 237);
   font-weight: 500;
   padding: 8px 12px;
   border: 2px solid gray;
+  background: linear-gradient(to bottom, rgb(175, 175, 175), rgb(39, 39, 39));
   /* border-radius: 6px; */
-  transition: background-color 0.3s;
+  transition: background-color 0.8s;
 }
 
 .v1:hover {
-  background: #f2f2f2;
+  background: linear-gradient(to bottom, rgb(39, 39, 39), rgb(175, 175, 175));
+  font-weight: 600;
 }
 
 .active {
+  background: linear-gradient(to bottom, rgb(39, 39, 39), rgb(175, 175, 175));
+
   text-decoration: underline;
-  border-color: black;
+  border-color: rgb(105, 105, 105);
   font-weight: bold;
 }
 

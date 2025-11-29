@@ -6,14 +6,54 @@
     width: 100%;
 }
 
+.main-title{
+  font-family: 'Orbitron', sans-serif !important;
+  padding: 20px;
+}
+
+.one{
+
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+
+  font-size: 100px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.two{
+  font-size: 30px;
+  font-weight:400;
+  padding-top: 10px;
+  
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+
+  letter-spacing: 3px;
+  word-spacing: 5px;
+}
+
 .sponsor-blank{
     padding: 0;
     margin: 0;
-    /* height: 80px; */
+    height: 70px;
 }
 
 .sponsors-main-introduction{
-    background-image: url('/assets/image/sponsors_image/anime_INFINITI7.png');
+
+  background:
+    linear-gradient(to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0.496),   /* color overlay */
+      rgb(0, 0, 0)
+    ),
+    url("/assets/image/sponsors_image/contact_bg.JPG");
+
+  background-size: cover;
+  background-position: center;
+
+
+/* 
+    background-image: url('/assets/image/sponsors_image/contact_bg.JPG');
+    background: linear-gradient(to bottom, #4facfe8a, #00f1fe3c); */
     /* filter: grayscale(70%); */
     background-size: cover;
     background-position: center;
@@ -21,29 +61,11 @@
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: left;
     min-height: 625px;
 }
 
-.s-title, .s-introduction{
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 6px rgb(0, 0, 0);
-    letter-spacing: 1px;
-}
 
-.s-title{
-    padding: 80px;
-    font-size: 120px;
-    font-weight: 800;
-    justify-content: flex-start;
-}
-
-.s-introduction{
-    padding: 80px;
-    font-size: x-large;
-    justify-content: flex-start;
-}
 .sponsor-main-block {
   display: flex;
   flex-direction: row;

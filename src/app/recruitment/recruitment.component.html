@@ -144,10 +144,12 @@
 
 
         <!-- --------------------------------------------Recruitment link------------------------------------------------------- -->
-        <div class="recruitment">
-            <a style="color:white;" href="https://docs.google.com/forms/d/e/1FAIpQLSfJilmm3gLGQkT_OffeSMjEvF-sFZZhIz1hJn8D20SrD1ZdSQ/viewform">
-                RECRUITMENT FORM
-            </a>
+        <div class="rec">
+            <div class="recruitment">
+                <a style="color:white;" href="https://docs.google.com/forms/d/e/1FAIpQLSfJilmm3gLGQkT_OffeSMjEvF-sFZZhIz1hJn8D20SrD1ZdSQ/viewform">
+                    RECRUITMENT FORM
+                </a>
+            </div>
         </div>
 
     </div>
@@ -201,19 +203,23 @@
                     <!-- Row 1 -->
                     <div class="img">
                         <img src="/assets/recruitment/steering/steering_assembly.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Steering Assembly</div>
                     </div>
 
                     <div class="img">
                         <img src="/assets/recruitment/steering/steering_wheel.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Steering Wheel</div>
                     </div>
 
                     <div class="img">
                         <img src="/assets/recruitment/steering/rack.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Rack</div>
                     </div>
 
                     <!-- Row 2 -->
                     <div class="img">
                         <img src="/assets/recruitment/steering/turning_radius.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Turning Radius</div>
                     </div>
 
 
@@ -226,6 +232,7 @@
 
                     <div class="img">
                         <img src="/assets/recruitment/steering/pinion.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Pinion</div>
                     </div>
 
 
@@ -233,6 +240,7 @@
                     <!-- Row 3 -->
                     <div class="img">
                         <img src="/assets/recruitment/cae/brakedisc.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Knuckle</div>
                     </div>
 
                     <div class="img">
@@ -282,19 +290,23 @@
                     <!-- Row 1 -->
                     <div class="img">
                         <img src="/assets/recruitment/suspension/front_simulation.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Simulation</div>
                     </div>
 
                     <div class="img">
                         <img src="/assets/recruitment/suspension/front_suspension.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Suspension</div>
                     </div>
 
                     <div class="img">
                         <img src="/assets/recruitment/suspension/knuckle.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Knuckle</div>
                     </div>
 
                     <!-- Row 2 -->
                     <div class="img">
                         <img src="/assets/recruitment/suspension/wish_bone.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Wish Bone</div>
                     </div>
 
 
@@ -307,6 +319,7 @@
 
                     <div class="img">
                         <img src="/assets/recruitment/suspension/swing_arm.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Swing Arm</div>
                     </div>
 
 
@@ -314,14 +327,17 @@
                     <!-- Row 3 -->
                     <div class="img">
                         <img src="/assets/recruitment/suspension/8O_rear_suspension.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Suspension</div>
                     </div>
 
                     <div class="img">
                         <img src="/assets/recruitment/suspension/wheel.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Wheel</div>
                     </div>
 
                     <div class="img">
                         <img src="/assets/recruitment/suspension/front_geometry.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Geometry</div>
                     </div>
 
                     
@@ -353,6 +369,7 @@
                     <ng-container *ngIf="!isImage">
                         <video [src]="currentSrc" class="open-image-or-video abc" playsinline loop autoplay muted controls></video>
                     </ng-container>
+                    
 
                 </div>
 
@@ -364,7 +381,10 @@
 
                     <!-- Row 1 -->
                     <div class="img">
+
                         <img src="/assets/recruitment/cae/knuckle.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Knuckle Analysis</div>
+
                     </div>
 
                     <div class="img">
@@ -372,10 +392,12 @@
                             <source src="assets/recruitment/cae/cae_videos/impact3.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
+                        <div class="subtitle">Impact</div>
                     </div>
 
                     <div class="img">
                         <img src="/assets/recruitment/cae/pedal.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Brake Pedal Analysis</div>
                     </div>
 
                     <!-- Row 2 -->
@@ -384,6 +406,7 @@
                             <source src="assets/recruitment/cae/cae_videos/impact2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
+                        <div class="subtitle">Impact</div>
                     </div>
 
 
@@ -399,6 +422,7 @@
                             <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
+                        <div class="subtitle">Impact</div>
                     </div>
 
 
@@ -406,14 +430,17 @@
                     <!-- Row 3 -->
                     <div class="img">
                         <img src="/assets/recruitment/cae/brakedisc.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Bake Disc Analysis</div>
                     </div>
 
                     <div class="img">
                         <img src="/assets/recruitment/cae/swing_arm.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Swing Arm alsi</div>
                     </div>
 
                     <div class="img">
                         <img src="/assets/recruitment/cae/wishbone.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Wishbone Analysis</div>
                     </div>
 
                     
@@ -453,20 +480,24 @@
 
                     <div class="img">
                         <img src="assets/recruitment/design/95th.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">95th Percentile</div>
                     </div>
 
 
                     <div class="img">
                         <img src="/assets/recruitment/design/bw2.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Bodworks</div>
                     </div>
 
                     <div class="img">
                         <img src="/assets/recruitment/design/chasis.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Chasis</div>
                     </div>
 
                     <!-- Row 2 -->
                     <div class="img">
                         <img src="assets/recruitment/design/8Ochasis.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Chasis</div>
                     </div>
 
 
@@ -479,6 +510,7 @@
 
                     <div class="img">
                         <img src="assets/recruitment/design/8Otopview.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">95th Percentile</div>
                     </div>
 
 
@@ -486,14 +518,17 @@
                     <!-- Row 3 -->
                     <div class="img">
                         <img src="/assets/recruitment/design/rula_analysis_catia.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">RULA Analysis</div>
                     </div>
 
                     <div class="img">
                         <img src="/assets/recruitment/design/honeycomb.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Honey Comb</div>
                     </div>
 
                     <div class="img">
                         <img src="/assets/recruitment/design/cf.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Caron Fiber</div>
                     </div>
                      
                 </div>
