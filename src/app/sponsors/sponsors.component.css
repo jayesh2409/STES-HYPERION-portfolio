@@ -7,12 +7,11 @@
 }
 
 .main-title{
-  font-family: 'Orbitron', sans-serif !important;
   padding: 20px;
 }
 
 .one{
-
+  font-family: 'Orbitron', sans-serif !important;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 
   font-size: 100px;
@@ -21,6 +20,7 @@
 }
 
 .two{
+  font-family: 'Titillium Web', sans-serif;
   font-size: 30px;
   font-weight:400;
   padding-top: 10px;
@@ -177,6 +177,24 @@ hr {
 
 @media (max-width: 768px) {
 
+
+  .one{
+
+    padding-top: 30px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+  .two{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
 
   .hover-wrapper {
     font-family: 'Titillium Web', sans-serif;
