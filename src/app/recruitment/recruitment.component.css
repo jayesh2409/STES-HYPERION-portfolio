@@ -17,6 +17,16 @@ a{
   color: rgb(214, 214, 214);
 }
 
+.subsystem-full-overlay{
+  background: #ffffff;
+  align-items:center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+  width: 75%;
+}
+
 .system{
 
   background: #333;
@@ -190,7 +200,7 @@ video{
 
   display: flex;        /* for centering content inside child (image/video) */
   justify-content: center;
-  align-items: center;
+  align-items: left;
 
   pointer-events: none; /* optional: allows clicks to pass through if needed */
   z-index: 99999;
