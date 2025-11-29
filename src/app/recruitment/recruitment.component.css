@@ -117,8 +117,7 @@ a{
   position: relative; /* important */
   /* padding: 0px; */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  place-items: center;
 }
 
 
@@ -184,29 +183,41 @@ video{
 .overlay-bg {
   width: 600px;
   height: 500px;
-  position: absolute;  
+  position: absolute;   /* overlay over parent */
   top: 50%;
   left: 50%;
-  max-width: 260px;
-  max-height: 220px;
+  transform: translate(-50%, -50%);
 
-  transform: translate(-50%, -50%); /* centers it */
-  /* background-color: rgba(65, 105, 225, 0.344); */
-  /* z-index: 10; overlay */
-
-  /* position: fixed; */
-  inset: 0;
-  background: rgba(0,0,0,0.85);
-  display: flex;
+  display: flex;        /* for centering content inside child (image/video) */
   justify-content: center;
   align-items: center;
+
+  pointer-events: none; /* optional: allows clicks to pass through if needed */
   z-index: 99999;
   cursor: zoom-out;
+
+  flex-direction: column;
 }
 
 .open-image-or-video{
-  max-width: 260px;
-  max-height: 180px;
+  max-width: 660px;
+  max-height: 580px;
+}
+
+.countdown{
+
+  font-family: 'Titillium Web', sans-serif;
+
+  width: 9px;
+  height: 15px;
+  background-color: #3a3a3a;
+  display: flex;
+  text-align: center;
+  padding: 5px;
+  color: rgb(211, 211, 211);
+  border: transparent;
+  border-radius: 10px 10px 0 0;
+  padding-bottom: 8px;
 }
 
 

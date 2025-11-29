@@ -9,6 +9,8 @@ import { CommonModule } from '@angular/common';
   templateUrl: './recruitment.component.html',
   styleUrls: ['./recruitment.component.css']
 })
+
+
 export class RecruitmentComponent {
   
 
@@ -63,28 +65,50 @@ export class RecruitmentComponent {
 
 
 
-  // .
+  // To OVERLAY THE CLICKED IAGE OR THE VIDEO.
   showPreview = false;
   currentSrc: string | null = null;
   isImage = true;
   timeoutRef: any;
+  countdownRef: any;
+  countdownValue: number = 7; // start from 7 seconds
 
   openPreview(event: any) {
-    const element = event.target;
-    this.currentSrc = element.src;
-    this.isImage = element.tagName.toLowerCase() === 'img';
+    const element = event.target as HTMLImageElement | HTMLVideoElement;
+
+    if (element.tagName.toLowerCase() === 'img') {
+      this.currentSrc = element.src;
+      this.isImage = true;
+    } else if (element.tagName.toLowerCase() === 'video') {
+      this.currentSrc = element.currentSrc || element.src;
+      this.isImage = false;
+    }
 
     this.showPreview = true;
+    this.countdownValue = 7; // reset countdown
 
+    // Clear previous timers
     if (this.timeoutRef) clearTimeout(this.timeoutRef);
+    if (this.countdownRef) clearInterval(this.countdownRef);
 
+    // Countdown interval
+    this.countdownRef = setInterval(() => {
+      this.countdownValue--;
+      if (this.countdownValue <= 0) {
+        clearInterval(this.countdownRef);
+      }
+    }, 1000);
+
+    // Close after 7seconds
     this.timeoutRef = setTimeout(() => {
       this.closePreview();
-    }, 70000);
+    }, 7000);
   }
 
   closePreview() {
     this.showPreview = false;
     this.currentSrc = null;
+    if (this.countdownRef) clearInterval(this.countdownRef);
   }
+
 }

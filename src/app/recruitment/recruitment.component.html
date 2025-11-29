@@ -249,13 +249,182 @@
 <!-- ===============STEERING overlay=================== -->
 
             <div class="functioning" *ngIf="activeOverlay === 1">
-                STEERING
+
+                <!-- IMAGE CLICK OVERLAY start-->
+
+                <div *ngIf="showPreview" class="overlay-bg" (click)="closePreview()">
+
+                    <!-- counter -->
+                    <div class="countdown">
+                        <p>
+                            {{ countdownValue }}
+                        </p>
+                    </div>
+                     
+
+                    <ng-container *ngIf="isImage">
+                        <img [src]="currentSrc" class="open-image-or-video abc" />
+                    </ng-container>
+
+                    <ng-container *ngIf="!isImage">
+                        <video [src]="currentSrc" class="open-image-or-video abc" playsinline loop autoplay muted controls></video>
+                    </ng-container>
+
+                </div>
+
+                <!-- IMAGE CLICK OVERLAY end -->
+
+                <div class="grid">
+
+                    <!-- Row 1 -->
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/knuckle.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/pedal.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+                    <!-- Center div -->
+                    <div class="empty">
+                        <p>
+                            STEERING
+                        </p>
+                    </div> 
+
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+
+                    <!-- Row 3 -->
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/brakedisc.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/swing_arm.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/wishbone.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    
+                     
+                </div>
+
+                
             </div>
             
 <!-- ===============SUSPENSION overlay=================== -->
            
             <div class="functioning" *ngIf="activeOverlay === 2">
-                SUSPENSION
+
+                <!-- IMAGE CLICK OVERLAY start-->
+
+                <div *ngIf="showPreview" class="overlay-bg" (click)="closePreview()">
+
+                    <!-- counter -->
+                    <div class="countdown">
+                        <p>
+                            {{ countdownValue }}
+                        </p>
+                    </div>
+
+                    <ng-container *ngIf="isImage">
+                        <img [src]="currentSrc" class="open-image-or-video abc" />
+                    </ng-container>
+
+                    <ng-container *ngIf="!isImage">
+                        <video [src]="currentSrc" class="open-image-or-video abc" playsinline loop autoplay muted controls></video>
+                    </ng-container>
+
+                </div>
+
+                <!-- IMAGE CLICK OVERLAY end -->
+
+                <div class="grid">
+
+                    <!-- Row 1 -->
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/knuckle.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/pedal.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+                    <!-- Center div -->
+                    <div class="empty">
+                        <p>
+                            SUSPENSION
+                        </p>
+                    </div> 
+
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+
+                    <!-- Row 3 -->
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/brakedisc.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/swing_arm.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/wishbone.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    
+                     
+                </div>
+
+
             </div>
             
 <!-- ===============CAE overlay=================== -->
@@ -266,12 +435,19 @@
 
                 <div *ngIf="showPreview" class="overlay-bg" (click)="closePreview()">
 
+                    <!-- counter -->
+                    <div class="countdown">
+                        <p>
+                            {{ countdownValue }}
+                        </p>
+                    </div>
+
                     <ng-container *ngIf="isImage">
                         <img [src]="currentSrc" class="open-image-or-video abc" />
                     </ng-container>
 
                     <ng-container *ngIf="!isImage">
-                        <video [src]="currentSrc" class="open-image-or-video abc" autoplay muted controls></video>
+                        <video [src]="currentSrc" class="open-image-or-video abc" playsinline loop autoplay muted controls></video>
                     </ng-container>
 
                 </div>
@@ -288,20 +464,20 @@
                     </div>
 
                     <div class="img">
-                        <video class="abc" (click)="openPreview($event)">
-                            <source src="/assets/recruitment/cae/cae_videos/impact3.mp4" type="video/mp4">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact3.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/pedal.jpg">
+                        <img src="/assets/recruitment/cae/pedal.jpg" class="abc" (click)="openPreview($event)">
                     </div>
 
                     <!-- Row 2 -->
                     <div class="img">
-                        <video autoplay muted loop>
-                            <source src="/assets/recruitment/cae/cae_videos/impact2.mp4" type="video/mp4">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -315,7 +491,7 @@
                     </div> 
 
                     <div class="img">
-                        <video autoplay muted loop>
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
                             <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -325,15 +501,15 @@
 
                     <!-- Row 3 -->
                     <div class="img">
-                        <img src="/assets/recruitment/cae/brakedisc.jpg">
+                        <img src="/assets/recruitment/cae/brakedisc.jpg" class="abc" (click)="openPreview($event)">
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/swing_arm.jpg">
+                        <img src="/assets/recruitment/cae/swing_arm.jpg" class="abc" (click)="openPreview($event)">
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/wishbone.jpg">
+                        <img src="/assets/recruitment/cae/wishbone.jpg" class="abc" (click)="openPreview($event)">
                     </div>
 
                     
@@ -346,25 +522,48 @@
 <!-- ===============DESIGN overlay=================== -->
             <div class="functioning" *ngIf="activeOverlay === 4">
 
+                <!-- IMAGE CLICK OVERLAY start-->
+
+                <div *ngIf="showPreview" class="overlay-bg" (click)="closePreview()">
+
+                    <!-- counter -->
+                    <div class="countdown">
+                        <p>
+                            {{ countdownValue }}
+                        </p>
+                    </div>
+
+                    <ng-container *ngIf="isImage">
+                        <img [src]="currentSrc" class="open-image-or-video abc" />
+                    </ng-container>
+
+                    <ng-container *ngIf="!isImage">
+                        <video [src]="currentSrc" class="open-image-or-video abc" playsinline loop autoplay muted controls></video>
+                    </ng-container>
+
+                </div>
+
+                <!-- IMAGE CLICK OVERLAY end -->
+
                 <div class="grid">
 
                     <div class="img">
-                        <img src="assets/recruitment/design/95th.png">
+                        <img src="assets/recruitment/design/95th.png" class="abc" (click)="openPreview($event)">
                     </div>
 
 
                     <div class="img">
-                        <img src="/assets/recruitment/design/bodyworks.png">
+                        <img src="/assets/recruitment/design/bodyworks.png" class="abc" (click)="openPreview($event)">
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/design/chasis.png">
+                        <img src="/assets/recruitment/design/chasis.png" class="abc" (click)="openPreview($event)">
                     </div>
 
                     <!-- Row 2 -->
                     <div class="img">
-                        <video autoplay muted loop>
-                            <source src="/assets/recruitment/cae/cae_videos/impact2.mp4" type="video/mp4">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -378,7 +577,7 @@
                     </div> 
 
                     <div class="img">
-                        <video autoplay muted loop>
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
                             <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -388,15 +587,15 @@
 
                     <!-- Row 3 -->
                     <div class="img">
-                        <img src="/assets/recruitment/cae/knuckle.jpg">
+                        <img src="/assets/recruitment/cae/knuckle.jpg" class="abc" (click)="openPreview($event)">
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/knuckle.jpg">
+                        <img src="/assets/recruitment/cae/knuckle.jpg" class="abc" (click)="openPreview($event)">
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/knuckle.jpg">
+                        <img src="/assets/recruitment/cae/knuckle.jpg" class="abc" (click)="openPreview($event)">
                     </div>
                      
                 </div>
@@ -406,37 +605,546 @@
 <!-- ===============BRAKING overlay=================== -->
             
             <div class="functioning" *ngIf="activeOverlay === 5">
-                BRAKING
+
+                <!-- IMAGE CLICK OVERLAY start-->
+
+                <div *ngIf="showPreview" class="overlay-bg" (click)="closePreview()">
+
+                    <!-- counter -->
+                    <div class="countdown">
+                        <p>
+                            {{ countdownValue }}
+                        </p>
+                    </div>
+
+                    <ng-container *ngIf="isImage">
+                        <img [src]="currentSrc" class="open-image-or-video abc" />
+                    </ng-container>
+
+                    <ng-container *ngIf="!isImage">
+                        <video [src]="currentSrc" class="open-image-or-video abc" playsinline loop autoplay muted controls></video>
+                    </ng-container>
+
+                </div>
+
+                <!-- IMAGE CLICK OVERLAY end -->
+
+
+                <div class="grid">
+
+                    <!-- Row 1 -->
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/knuckle.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/pedal.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+                    <!-- Center div -->
+                    <div class="empty">
+                        <p>
+                            BRAKING
+                        </p>
+                    </div> 
+
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+
+                    <!-- Row 3 -->
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/brakedisc.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/swing_arm.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/wishbone.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    
+                     
+                </div>
+
             </div>
             
 <!-- ===============TRANSMISSION overlay=================== -->
            
             <div class="functioning" *ngIf="activeOverlay === 6">
-                TRANSMISSION
+
+                <!-- IMAGE CLICK OVERLAY start-->
+
+                <div *ngIf="showPreview" class="overlay-bg" (click)="closePreview()">
+
+                    <!-- counter -->
+                    <div class="countdown">
+                        <p>
+                            {{ countdownValue }}
+                        </p>
+                    </div>
+
+                    <ng-container *ngIf="isImage">
+                        <img [src]="currentSrc" class="open-image-or-video abc" />
+                    </ng-container>
+
+                    <ng-container *ngIf="!isImage">
+                        <video [src]="currentSrc" class="open-image-or-video abc" playsinline loop autoplay muted controls></video>
+                    </ng-container>
+
+                </div>
+
+                <!-- IMAGE CLICK OVERLAY end -->
+
+                <div class="grid">
+
+                    <!-- Row 1 -->
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/knuckle.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/pedal.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+                    <!-- Center div -->
+                    <div class="empty">
+                        <p>
+                            TRANSMISSION
+                        </p>
+                    </div> 
+
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+
+                    <!-- Row 3 -->
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/brakedisc.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/swing_arm.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/wishbone.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    
+                     
+                </div>
+
+
+
             </div>
             
 <!-- ===============ELECTRICAL overlay=================== -->
  
             <div class="functioning" *ngIf="activeOverlay === 7">
-                ELECTRICAL
+
+                <!-- IMAGE CLICK OVERLAY start-->
+
+                <div *ngIf="showPreview" class="overlay-bg" (click)="closePreview()">
+
+                    <!-- counter -->
+                    <div class="countdown">
+                        <p>
+                            {{ countdownValue }}
+                        </p>
+                    </div>
+
+                    <ng-container *ngIf="isImage">
+                        <img [src]="currentSrc" class="open-image-or-video abc" />
+                    </ng-container>
+
+                    <ng-container *ngIf="!isImage">
+                        <video [src]="currentSrc" class="open-image-or-video abc" playsinline loop autoplay muted controls></video>
+                    </ng-container>
+
+                </div>
+
+                <!-- IMAGE CLICK OVERLAY end -->
+
+                <div class="grid">
+
+                    <!-- Row 1 -->
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/knuckle.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/pedal.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+                    <!-- Center div -->
+                    <div class="empty">
+                        <p>
+                            ELECTRICAL
+                        </p>
+                    </div> 
+
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+
+                    <!-- Row 3 -->
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/brakedisc.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/swing_arm.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/wishbone.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    
+                     
+                </div>
+
+
+
             </div>
             
 <!-- ===============SOLAR overlay=================== -->
 
             <div class="functioning" *ngIf="activeOverlay === 8">
-                SOLAR
+
+                <!-- IMAGE CLICK OVERLAY start-->
+
+                <div *ngIf="showPreview" class="overlay-bg" (click)="closePreview()">
+
+                    <!-- counter -->
+                    <div class="countdown">
+                        <p>
+                            {{ countdownValue }}
+                        </p>
+                    </div>
+
+                    <ng-container *ngIf="isImage">
+                        <img [src]="currentSrc" class="open-image-or-video abc" />
+                    </ng-container>
+
+                    <ng-container *ngIf="!isImage">
+                        <video [src]="currentSrc" class="open-image-or-video abc" playsinline loop autoplay muted controls></video>
+                    </ng-container>
+
+                </div>
+
+                <!-- IMAGE CLICK OVERLAY end -->
+
+                <div class="grid">
+
+                    <!-- Row 1 -->
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/knuckle.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/pedal.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+                    <!-- Center div -->
+                    <div class="empty">
+                        <p>
+                            SOLAR
+                        </p>
+                    </div> 
+
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+
+                    <!-- Row 3 -->
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/brakedisc.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/swing_arm.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/wishbone.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    
+                     
+                </div>
+
+
+
             </div>
             
 <!-- ===============AUTONOMOUS overlay=================== -->
 
             <div class="functioning" *ngIf="activeOverlay === 9">
-                AUTONOMOUS DRIVING
+
+                <!-- IMAGE CLICK OVERLAY start-->
+
+                <div *ngIf="showPreview" class="overlay-bg" (click)="closePreview()">
+
+                    <!-- counter -->
+                    <div class="countdown">
+                        <p>
+                            {{ countdownValue }}
+                        </p>
+                    </div>
+
+                    <ng-container *ngIf="isImage">
+                        <img [src]="currentSrc" class="open-image-or-video abc" />
+                    </ng-container>
+
+                    <ng-container *ngIf="!isImage">
+                        <video [src]="currentSrc" class="open-image-or-video abc" playsinline loop autoplay muted controls></video>
+                    </ng-container>
+
+                </div>
+
+                <!-- IMAGE CLICK OVERLAY end -->
+
+                <div class="grid">
+
+                    <!-- Row 1 -->
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/knuckle.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/pedal.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+                    <!-- Center div -->
+                    <div class="empty">
+                        <p>
+                            AUTONOMOUS DRIVING
+                        </p>
+                    </div> 
+
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+
+                    <!-- Row 3 -->
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/brakedisc.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/swing_arm.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/wishbone.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    
+                     
+                </div>
+
+
+
             </div>
             
 <!-- ===============MEDIA overlay=================== -->
            
             <div class="functioning" *ngIf="activeOverlay === 10">
-                MEDIA
+
+                <!-- IMAGE CLICK OVERLAY start-->
+
+                <div *ngIf="showPreview" class="overlay-bg" (click)="closePreview()">
+
+                    <!-- counter -->
+                    <div class="countdown">
+                        <p>
+                            {{ countdownValue }}
+                        </p>
+                    </div>
+
+                    <ng-container *ngIf="isImage">
+                        <img [src]="currentSrc" class="open-image-or-video abc" />
+                    </ng-container>
+
+                    <ng-container *ngIf="!isImage">
+                        <video [src]="currentSrc" class="open-image-or-video abc" playsinline loop autoplay muted controls></video>
+                    </ng-container>
+
+                </div>
+
+                <!-- IMAGE CLICK OVERLAY end -->
+
+                <div class="grid">
+
+                    <!-- Row 1 -->
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/knuckle.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/pedal.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+                    <!-- Center div -->
+                    <div class="empty">
+                        <p>
+                            MEDIA
+                        </p>
+                    </div> 
+
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+
+                    <!-- Row 3 -->
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/brakedisc.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/swing_arm.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/cae/wishbone.jpg" class="abc" (click)="openPreview($event)">
+                    </div>
+
+                    
+                     
+                </div>
+
+
+
             </div>
         
     </div>
