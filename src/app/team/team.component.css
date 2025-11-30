@@ -47,10 +47,98 @@ html, body {
 .main-full-block-border{
   background-color: antiquewhite;
   border: 2px solid black;
-  padding: 20px;
+  /* padding: 20px; */
+
+  display: flex;
+  flex-direction: column;
 }
 
 
+
+.core-team{
+
+
+  /* temporary part delete after wards */
+  height: auto;
+  width: 100%;
+
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.members-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 20px;
+  white-space: nowrap; /* Prevents breaking text into multiple lines */
+}
+
+.leader {
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+}
+
+.img-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+
+  transition: transform 0.3s ease-in-out; /* smooth animation */
+  cursor: pointer;
+}
+
+.img-circle:hover {
+  transform: scale(1.05); /* size increases by 10% */
+}
+
+.name{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight:700;
+  padding: 7px;
+}
+
+.role{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight:400;
+  padding: 7px;
+}
+
+.fa-brands{
+  padding: 5px;
+  font-size: x-large;
+  text-decoration: none;
+}
+
+a[aria-label="LinkedIn"] i {
+  color: #000000;
+}
+
+a[aria-label="LinkedIn"] i:hover {
+  color: #0077B5;
+}
+
+.senior-team{
+
+
+  
+  /* temporary part delete after wards */
+  height: auto;
+  width: 100%;
+
+  background: #0095ff;
+}
 
 
 
@@ -73,7 +161,7 @@ html, body {
   .main-full-block-border{
     background-color: antiquewhite;
     border: 1px solid black;
-    padding: 10px;
+    /* padding: 10px; */
   }
 
 
