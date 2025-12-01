@@ -140,6 +140,14 @@ a[aria-label="LinkedIn"] i:hover {
   background: #0095ff;
 }
 
+.body{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  flex-direction: row;
+  gap: 100px;
+}
+
+
 
 
 

@@ -41,11 +41,17 @@
 
   background:
     linear-gradient(to bottom,
-      rgba(255, 255, 255, 0),
-      rgba(0, 0, 0, 0.496),   /* color overlay */
-      rgb(0, 0, 0)
+      rgba(0, 0, 0, 0.799),
+      rgba(0, 0, 0, 0.496), 
+      rgba(0, 0, 0, 0)
     ),
-    url("/assets/image/sponsors_image/contact_bg.JPG");
+    url("/assets/sponsors/cover_images/karimotorspeedway.JPG");
+
+  /* background: linear-gradient(90deg,
+      rgba(0, 0, 0, 0.799),
+      rgba(0, 0, 0, 0.496), 
+      rgba(0, 0, 0, 0)
+    ); */
 
   background-size: cover;
   background-position: center;
