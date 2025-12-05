@@ -65,7 +65,7 @@ export class RecruitmentComponent {
 
 
 
-  // To OVERLAY THE CLICKED IAGE OR THE VIDEO.
+  // To OVERLAY THE CLICKED IMAGE OR THE VIDEO.
   showPreview = false;
   currentSrc: string | null = null;
   isImage = true;
