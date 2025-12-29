@@ -39,8 +39,9 @@ export class RecruitmentComponent {
   hideOverlayWithDelay() {
     this.hideTimeout = setTimeout(() => {
       this.activeOverlay = null;
-    }, 40000); // 30000ms = 2 seconds delay
+    }, 60000); // 30000ms = 2 seconds delay
   }
+
 
 
 
@@ -72,6 +73,7 @@ export class RecruitmentComponent {
   timeoutRef: any;
   countdownRef: any;
   countdownValue: number = 7; // start from 7 seconds
+
 
   openPreview(event: any) {
     const element = event.target as HTMLImageElement | HTMLVideoElement;
@@ -110,5 +112,7 @@ export class RecruitmentComponent {
     this.currentSrc = null;
     if (this.countdownRef) clearInterval(this.countdownRef);
   }
+
+  
 
 }
