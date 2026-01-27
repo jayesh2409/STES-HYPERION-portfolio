@@ -144,59 +144,185 @@
 
 
 
-            <!-- 1        esvc 2025 -->
-            <div class="ach-inside-content">
-
-                <div class="ach-imgdiv">
-                    <img class="ach-image" src="assets/home/achievements/esvc2025.jpg">
-                </div>
-
-                <div>
-                    <p>
-                        adfyugduiguigwuifgwuifwffdiduiqgduqgduiqgduiqgduiqgdui
-                    </p>
-                </div>
-
-            </div>
-
-
-
-
-            <!-- 2 -->
+            <!-- all events           WITHOUT MOUSE ENTER EFFECT-->
             <div class="ach-inside-content">
 
 
-                <div class="ach-imgdiv">
-                    <img class="ach-image" src="assets/home/achievements/esvc2025.jpg">
+
+
+                <!-- ESVC 2025 -->
+                <div class="ach-imgdiv"
+                    (mouseenter)="onEnter(1)"
+                    (mouseleave)="onLeave()">
+
+                    <!-- IMAGE -->
+                    <img *ngIf="activeNo !== 1"
+                        class="ach-image"
+                        src="assets/home/achievements/esvc_2025.png">
+
+                    <!-- TEXT -->
+                    <div class="ach-text" *ngIf="activeNo === 1">
+                        <div class="ach-mouseenter-content">
+
+                            <div class="title-ach">ESVC 2025</div>
+
+                            <div class="content-ach">
+
+                                <!-- overall and place and vehicle-->
+                                <div class="content-ach-one">
+                                                <div>
+                                                    🏆 1st RUNNER UP
+                                                </div>
+
+                                                <div>
+                                                    Vehicle: ANANTAM 1.0
+                                                </div>
+
+                                                <div>
+                                                    Noida, Uttar Pradesh, India
+                                                </div>
+
+                                </div>
+
+                                <!-- awards -->
+                                <div class="content-ach-two">
+                                                <h3 style="color: rgb(38, 38, 38);">AWARDS</h3>
+                                                
+                                                <h5>🏆 Best Solar</h5>
+                                                <h5>🏆 Best Cross Pad</h5>
+                                                <h5>🏆 Lightest Vehicle</h5>
+                                                <h5>🏆 Best CAE</h5>
+                                                <h5>🏆 Design Runner up</h5>
+                                                
+                                                
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
-                <div>
-                    <p>
-                        adfyugduiguigwuifgwuifwffdiduiqgduqgduiqgduiqgduiqgdui
-                    </p>
+
+
+
+                <!-- SEVC 2025 -->
+                <div class="ach-imgdiv"
+                    (mouseenter)="onEnter(2)"
+                    (mouseleave)="onLeave()">
+
+                    <!-- IMAGE -->
+                    <img *ngIf="activeNo !== 2"
+                        class="ach-image"
+                        src="assets/home/achievements/sevc_2025.png">
+
+                    <!-- TEXT -->
+                    <div class="ach-text" *ngIf="activeNo === 2">
+                        <div class="ach-mouseenter-content">
+
+                            <div class="title-ach">SEVC 2025</div>
+
+                            <div class="content-ach">
+
+                                <!-- overall and place and vehicle-->
+                                <div class="content-ach-one">
+                                                <div>
+                                                    🏆 1st RUNNER UP
+                                                </div>
+
+                                                <div>
+                                                    Vehicle: INFINITI 8.0
+                                                </div>
+
+                                                <div>
+                                                    Coimbatore, Tamil Nadu, India
+                                                </div>
+
+                                </div>
+
+                                <!-- awards -->
+                                <div class="content-ach-two">
+                                                <h3 style="color: rgb(38, 38, 38);">AWARDS</h3>
+                                                <h5>🏆 Best Design</h5>
+                                                <h5>🏆 Dynamic Champions</h5>
+                                                <h5>🏆 Hovering & Drag</h5>
+                                                <h5>🏆 Best Endurance</h5>
+                                                <h5>🏆 Rush In Dusk</h5>
+                                                <h5>🏆 Lightest Vehicle</h5>
+                                                <h5>🏆 Autonomous</h5>
+                                            
+                                                
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
+
+
+
+
+                <!-- SEVC 2024 -->
+                <div class="ach-imgdiv"
+                    (mouseenter)="onEnter(3)"
+                    (mouseleave)="onLeave()">
+
+                    <!-- IMAGE -->
+                    <img *ngIf="activeNo !== 3"
+                        class="ach-image"
+                        src="assets/home/achievements/sevc_2024.png">
+
+                    <!-- TEXT -->
+                    <div class="ach-text" *ngIf="activeNo === 3">
+                        <div class="ach-mouseenter-content">
+
+                            <div class="title-ach">SEVC 2024</div>
+
+                            <div class="content-ach">
+
+                                <!-- overall and place and vehicle-->
+                                <div class="content-ach-one">
+                                                <div>
+                                                    🏆 AIR RANK 1
+                                                </div>
+
+                                                <div>
+                                                    Vehicle: INFINITI 7.0
+                                                </div>
+
+                                                <div>
+                                                    Udupi, Karnataka, India
+                                                </div>
+
+                                                
+                                </div>
+
+                                <!-- awards -->
+                                <div class="content-ach-two">
+                                                <h3 style="color: rgb(38, 38, 38);">AWARDS</h3>
+                                                <h5>🏆 Best Design</h5>
+                                                <h5>🏆 Rain Test - HOH</h5>
+                                                <h5>🏆 Best Endurance</h5>
+                                                <h5>🏆 Rush In Dusk</h5>
+                                                <h5>🏆 Hill Climb</h5>
+                                                
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
 
 
             </div>
-            
-            <!-- 3 -->
-            <div class="ach-inside-content">
 
-
-                <div class="ach-imgdiv">
-                    <img class="ach-image" src="assets/home/achievements/sevc2024.JPG">
-                </div>
-
-                <div>
-                    <p>
-                        adfyugduiguigwuifgwuifwffdiduiqgduqgduiqgduiqgduiqgdui
-                    </p>
-                </div>
-
-
-            </div>
-
-        </div>
 
     </div>
 
@@ -296,7 +422,7 @@
     <div class="sponsors-home" style="display: flex; flex-direction: column;">
 
         <!-- 1 title -->
-        <div class="sponsors-title-home" style="padding: 20px; padding-top: 30px; text-align: center;">
+        <div class="sponsors-title-home" style="padding: 20px; padding-top: 30px; padding-bottom: 80px; text-align: center;">
             <div>
                 <p>OUR SPONSORS</p>
             </div>

@@ -19,7 +19,7 @@
 
 
 <!-- ---------------------------------STARTED---------------------------------- -->
-<div style="display: flex; flex-direction: row; border-top: 2px solid black;">
+<div style="display: flex; flex-direction: row; border-top: 2px solid black; height: auto;">
     
     <!-- --------------------------------------------------------------------------- -->
     <!-- make them display flex and in row -->
@@ -27,7 +27,7 @@
 
 
     <!-- -------------------------------------LIST SUBSYSTEMS---------------------------------------- -->
-    <div style="gap:20px ;padding-top: 0px; display: flex; flex-direction: column; background-color: rgb(44, 44, 44); height: 600px; width: 25%; align-items: center; justify-content: center;">
+    <div style="gap:20px ;padding-top: 0px; display: flex; flex-direction: column; background-color: rgb(44, 44, 44); height: 600px; width: 20%; align-items: center; justify-content: center;">
 
 
         <!-- sponsors as a title -->
@@ -38,10 +38,10 @@
 
 
         <!-- --------MAKING COLUMNS--------- -->
-        <div style="width: 250px; gap: 20px; padding-top: 0px; display:flex; flex-direction: column; justify-content: center; align-items: left;">
+        <div style="width: 250px; gap: 20px; padding-top: 0px; display:flex; flex-direction: column; justify-content: center; align-items: left; padding-left: 30px;">
 
             <!-- ============================STEERING button and pointer======================== -->
-            <div class="your-btn" style="display: flex; flex-direction: row; gap: 30px;">
+            <div class="your-btn" style="display: flex; flex-direction: row; gap: 30px; position: relative;">
                 <div class="system A">
                     <a (click)="showOverlay(1)" (mouseleave)="hideOverlayWithDelay()">STEERING</a>
                 </div>
@@ -111,13 +111,13 @@
 
 
             <!-- ============================SOLAR button and pointer======================== -->
-            <div class="your-btn" style="display: flex; flex-direction: row; gap: 30px;">
+            <!-- <div class="your-btn" style="display: flex; flex-direction: row; gap: 30px;">
                 <div class="system A">
                     <a (click)="showOverlay(8)" (mouseleave)="hideOverlayWithDelay()">SOLAR</a>
                 </div>
 
                 <div class="triangle" *ngIf="activeOverlay === 8"></div>
-            </div>
+            </div> -->
 
 
             <!-- ============================AUTONOMOUS button and pointer======================== -->
@@ -239,16 +239,16 @@
 
                     <!-- Row 3 -->
                     <div class="img">
-                        <img src="/assets/recruitment/cae/brakedisc.jpg" class="abc" (click)="openPreview($event)">
-                        <div class="subtitle">Knuckle</div>
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/swing_arm.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/wishbone.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
                     </div>
 
                     
@@ -656,7 +656,8 @@
 
                     <!-- Row 1 -->
                     <div class="img">
-                        <img src="/assets/recruitment/cae/knuckle.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/transmission/wheel.jpeg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Wheel</div>
                     </div>
 
                     <div class="img">
@@ -747,26 +748,24 @@
 
                     <!-- Row 1 -->
                     <div class="img">
-                        <img src="/assets/recruitment/cae/knuckle.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/electrical/hub_motor.jpeg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Hub Motor</div>
                     </div>
 
                     <div class="img">
-                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
-                            <source src="assets/recruitment/cae/cae_videos/impact3.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img src="/assets/recruitment/electrical/final_display.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Data Aquisition</div>
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/pedal.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/electrical/battery.JPG" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Battery-Accumulator</div>
                     </div>
 
                     <!-- Row 2 -->
                     <div class="img">
-                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
-                            <source src="assets/recruitment/cae/cae_videos/impact2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img src="/assets/recruitment/electrical/motor_controller.jpeg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Motor Controller</div>
                     </div>
 
 
@@ -778,25 +777,26 @@
                     </div> 
 
                     <div class="img">
-                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
-                            <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img src="/assets/recruitment/electrical/pcb.jpeg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">PCB Printed Circuit Board</div>
                     </div>
 
 
 
                     <!-- Row 3 -->
                     <div class="img">
-                        <img src="/assets/recruitment/cae/brakedisc.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/solar/mppt.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Max. Power Point Tracking (MPPT)</div>
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/swing_arm.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/solar/monocrystalline_solar.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Monocrystalline Solar Panel</div>
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/wishbone.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/solar/panel_layout.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Solar Panel Layout</div>
                     </div>
 
                     
@@ -809,14 +809,14 @@
             
 <!-- ===============SOLAR overlay=================== -->
 
-            <div class="functioning" *ngIf="activeOverlay === 8">
+            <!-- <div class="functioning" *ngIf="activeOverlay === 8"> -->
 
                 <!-- IMAGE CLICK OVERLAY start-->
 
-                <div *ngIf="showPreview" class="overlay-bg" (click)="closePreview()">
+                <!-- <div *ngIf="showPreview" class="overlay-bg" (click)="closePreview()">
 
-                    <!-- counter -->
-                    <div class="countdown">
+                    counter -->
+                    <!-- <div class="countdown">
                         <p>
                             {{ countdownValue }}
                         </p>
@@ -828,32 +828,32 @@
 
                     <ng-container *ngIf="!isImage">
                         <video [src]="currentSrc" class="open-image-or-video abc" playsinline loop autoplay muted controls></video>
-                    </ng-container>
+                    </ng-container> -->
 
-                </div>
+                <!-- </div> -->
 
                 <!-- IMAGE CLICK OVERLAY end -->
 
-                <div class="grid">
+                <!-- <div class="grid">
 
-                    <!-- Row 1 -->
+                    <!- Row 1 -->
+                    <!-- <div class="img">
+                        <img src="/assets/recruitment/solar/mppt.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Max. Power Point Tracking (MPPT)</div> --> 
+                    <!-- </div>
+
                     <div class="img">
-                        <img src="/assets/recruitment/cae/knuckle.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/solar/monocrystalline_solar.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Monocrystalline Solar Panel</div>
                     </div>
 
                     <div class="img">
-                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
-                            <source src="assets/recruitment/cae/cae_videos/impact3.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img src="/assets/recruitment/solar/panel_layout.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Solar Panel Layout</div>
                     </div>
 
-                    <div class="img">
-                        <img src="/assets/recruitment/cae/pedal.jpg" class="abc" (click)="openPreview($event)">
-                    </div>
-
-                    <!-- Row 2 -->
-                    <div class="img">
+                    Row 2 -->
+                    <!-- <div class="img">
                         <video class="abc" (click)="openPreview($event)" autoplay muted loop>
                             <source src="assets/recruitment/cae/cae_videos/impact2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -861,25 +861,25 @@
                     </div>
 
 
-                    <!-- Center div -->
-                    <div class="empty">
+                     Center div -->
+                    <!-- <div class="empty">
                         <p>
                             SOLAR
                         </p>
-                    </div> 
+                    </div>  -->
 
-                    <div class="img">
+                    <!-- <div class="img">
                         <video class="abc" (click)="openPreview($event)" autoplay muted loop>
                             <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                    </div>
+                    </div> -->
 
 
 
                     <!-- Row 3 -->
-                    <div class="img">
-                        <img src="/assets/recruitment/cae/brakedisc.jpg" class="abc" (click)="openPreview($event)">
+                    <!-- <div class="img">
+                        <img src="/assets/recruitment/solar/monocrystalline_solar.jpg" class="abc" (click)="openPreview($event)">
                     </div>
 
                     <div class="img">
@@ -888,15 +888,15 @@
 
                     <div class="img">
                         <img src="/assets/recruitment/cae/wishbone.jpg" class="abc" (click)="openPreview($event)">
-                    </div>
+                    </div> -->
 
                     
                      
-                </div>
+                <!-- </div>
 
+ -->
 
-
-            </div>
+            <!-- </div>  -->
             
 <!-- ===============AUTONOMOUS overlay=================== -->
 

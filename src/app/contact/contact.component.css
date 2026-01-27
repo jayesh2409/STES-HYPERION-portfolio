@@ -21,17 +21,9 @@
     color: white;
 }
 
-.parent {
-  display: flex;
-  flex-direction: column; /* Mobile first */
-  gap: 10px;
-  border: 2px solid black;
-  padding: 20px;
-}
 
-.parent-out{
 
-}
+
 
 @media (min-width: 768px) {
   .parent {
@@ -39,15 +31,7 @@
   }
 }
 
-.child {
-  background: rgb(255, 255, 255);
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-right: 3px solid black;
-}
+
 
 .hfive{
     color:rgb(49, 48, 48)

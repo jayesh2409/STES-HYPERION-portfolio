@@ -1,112 +1,61 @@
-<div style="height: 80px; background-color: rgb(52, 52, 52);"></div>
+<div style="height: 70px; background-color: rgb(52, 52, 52);"></div>
 
 <div class="contact-container" style="justify-content: right; display: flex; flex-direction: row;">
     <div class="left-side" style="flex: 1; display: flex; justify-content: center; align-items: center;"></div>
 
     <div class="right-side" style="padding: 50px; flex: 1; display: flex; justify-content: center; align-items: center;">
 
-        <div class="form-container" style="background-color: rgba(0, 0, 0, 0.304);display: flex; flex-direction: column;">
-            <div class="title-container">
+        <div class="form-container" style="background-color: rgba(0, 0, 0, 0.304); display: flex; flex-direction: column; padding: 30px; border-radius: 10px;">
+            <div class="title-container field">
                 <h1>CONTACT US</h1>
             </div>
-            <div class="form" style="border: 2px solid gray;">
-                <section class="section">
-                    <div class="container" >
-                        <!-- contact form --> 
-                        <form>
-                            <!-- name -->
-                            <div class="field">
-                                <div>
-                                    <label class="label">Name</label>
-                                </div>
-                                <div>
-                                    <input type="text" name="name" class="input" placeholder="Enter your name">
-                                </div>
-                            </div>
-                            <!-- email -->
-                            <div class="field">
-                                <div>
-                                    <label class="label">Email</label>
-                                </div>
-                                <div>
-                                    <input type="email" name="email" class="input" placeholder="Enter your mail">
-                                </div>
-                            </div>
-                            <!-- message -->
-                            <div class="field">
-                                <div>
-                                    <label class="label">Message</label>
-                                </div>
-                                <div>
-                                    <textarea name="message" class="textarea" placeholder="Enter your message">
-                                    </textarea>
-                                </div>
-                            </div>
-                            <!-- submit button -->
-                            <div class="field" style="justify-content: center;">
-                                <div>
-                                    <button type="submit" class="button is-large is-warning">
-                                        Send !
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </section>
-            </div>
+
+            <form [formGroup]="contactForm" (ngSubmit)="submitForm()" novalidate style="display:flex; flex-direction: column;justify-content: center; align-items: center;">
+
+                <!-- Name Field -->
+                <input
+                    type="text"
+                    placeholder="Name"
+                    formControlName="name"
+                    style="margin-bottom: 10px; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"
+                />
+                <small *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid" style="color: red; margin-bottom: 10px;">
+                    Name is required
+                </small>
+
+                <!-- Email Field -->
+                <input
+                    type="email"
+                    placeholder="Email"
+                    formControlName="email"
+                    style="margin-bottom: 10px; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"
+                />
+                <small *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid" style="color: red; margin-bottom: 10px;">
+                    Valid email is required
+                </small>
+
+                <!-- Message Field -->
+                <textarea
+                    placeholder="Message"
+                    formControlName="message"
+                    style="margin-bottom: 10px; padding: 10px; border-radius: 5px; border: 1px solid #ccc; min-height: 100px;"
+                ></textarea>
+                <small *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid" style="color: red; margin-bottom: 10px;">
+                    Message is required
+                </small>
+
+                <!-- Send Button -->
+                <button 
+                    type="submit"
+                    [disabled]="contactForm.invalid || isSending"
+                    style="padding: 12px 20px; border-radius: 5px; border: none; background-color: #ff3a13; color: rgb(255, 255, 255); cursor: pointer;"
+                >
+                    <span *ngIf="!isSending">Send</span>
+                    <span *ngIf="isSending">Sending...</span>
+                </button>
+
+            </form>
         </div>
 
-    </div>
-</div>
-<div class="parent-out">
-    <div class="parent">
-        
-    <div class="child">
-        <!-- tech related queries -->
-        <h4 class="hfour">Tech Related Queries</h4>
-
-        <div class="empty-space" style="height:10px; width: 100%;"></div>
-        <h5 class="hfive">Team Manager: Mugdha Ganu</h5>
-        <h6 class="hsix">54675868757</h6>
-
-        <div class="empty-space" style="height:10px; width: 100%;"></div>
-        <h5 class="hfive">Adwait Lawate</h5>
-        <h6 class="hsix">54675868757</h6>
-
-        <div class="empty-space" style="height:10px; width: 100%;"></div>
-        <h5 class="hfive">Omkar Kale</h5>
-        <h6 class="hsix">54675868757</h6>
-
-        <!-- non tech related queries -->
-        <div class="empty-space" style="height:10px; width: 100%;"></div>
-        <div class="empty-space" style="height:10px; width: 100%;"></div>
-        <h4 class="hfour">Non-tech Related Queries</h4>
-
-        <div class="empty-space" style="height:10px; width: 100%;"></div>
-        <h5 class="hfive">Adwait Lawate</h5>
-        <h6 class="hsix">54675868757</h6>
-
-        <div class="empty-space" style="height:10px; width: 100%;"></div>
-        <h5 class="hfive">Omkar Kale</h5>
-        <h6 class="hsix">54675868757</h6>
-    </div>
-
-    <!-- non tech related queries -->
-    <div class="child">
-        
-    </div>
-
-    <!-- team mail id and social media -->
-    <div class="child">
-        <h4 class="hfour">Follow Us On</h4>
-        <h5 class="hfive">Instagram</h5>
-        <h5 class="hfive">LinkedIn</h5>
-        <h5 class="hfive">YouTube</h5>
-        <!-- <h5 class="hfive">Facebook</h5> -->
-    </div>
-
-    <div class="child">4jhkjyi</div>
-    <div class="child">4</div>
-    <div class="child">5iyiy</div>
     </div>
 </div>

@@ -90,7 +90,7 @@ h1 {
 .mission-title{
   /* font-family: 'Poppins', sans-serif !important; */
   font-family: 'Orbitron', sans-serif !important;
-  padding-top:40px;
+  
   padding-bottom:40px;
   text-align: center;
   font-size:xx-large;
@@ -115,6 +115,7 @@ h1 {
   height: 150px;
   width: 250px;
   border-radius: 3px;
+  clip-path: polygon(0 0, 90% 0, 75% 100%, 0 100%);
 }
 
 .mission-text{
@@ -125,7 +126,7 @@ h1 {
 
 .mission-blocks-one-inside{
   border: 2px solid black;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
 }
@@ -136,6 +137,7 @@ h1 {
 }
 
 .ach-title{
+  padding-top: 130px;
   padding-bottom: 90px;
 }
 
@@ -167,11 +169,51 @@ h1 {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.ach-imgdiv:hover .ach-image {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+.ach-mouseenter-content{
+  display: flex;
+  flex-direction: column;
 }
 
+.ach-text{
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.title-ach{
+  display: flex;
+
+  /* align-items: center; */
+  justify-content: center;
+  
+  color: rgb(70, 70, 70);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.content-ach{
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 30px;
+}
+
+.content-ach-one{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  /* align-items: left; */
+  /* justify-content: left; */
+  gap: 20px;
+  font-size: 20px;
+}
+
+.content-ach-two{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
 
 .vehicle-image{
   height: auto;
@@ -435,8 +477,25 @@ h1 {
   padding: 5px;
 }
 
+.content-ach{
+  height: 200px;
+  width: 280px;
+  padding: 5px;
+}
 
+.content-ach-one{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  /* align-items: left; */
+  /* justify-content: left; */
+  gap: 5px;
+  font-size: 10px;
+}
 
-
+.mission-image{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
 
 }

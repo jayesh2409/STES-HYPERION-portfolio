@@ -26,4 +26,21 @@ export class HomeComponent {
   goToTeam(){
     this.router.navigate(['/team']);
   }
+
+
+
+
+  // achievements logic
+
+  activeNo: number | null = null;
+
+  onEnter(no: number) {
+    this.activeNo = no;
+  }
+
+  onLeave() {
+    this.activeNo = null;
+  }
+
+
 }
