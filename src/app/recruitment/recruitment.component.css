@@ -18,15 +18,16 @@ a{
 }
 
 .title-subsyst{
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: left;
   text-align: left;
   font-family: 'Orbitron', sans-serif !important;
-  font-size: 25px;
+  font-size: 27px;
   font-weight: bolder;
-  color: rgb(214, 214, 214);
+  color: rgb(245, 245, 245);
 }
 
 .subsystem-full-overlay{
@@ -37,6 +38,18 @@ a{
   justify-content: center;
   height: 600px;
   width: 80%;
+}
+
+.list{
+  gap:20px ;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(44, 44, 44);
+  height: 600px;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
 }
 
 .system{
@@ -107,6 +120,9 @@ a{
   justify-content:flex-start;
   align-items: flex-start;
   padding-left: 75px;
+  flex-direction: row;
+  
+  padding-left: 30px;
 }
 
 .recruitment{
@@ -249,6 +265,15 @@ video{
   padding-bottom: 8px;
 }
 
+.inside-text{
+  font-family: 'Titillium Web', sans-serif;
+  text-decoration: underline;
+  text-align: center;
+  font-size: larger;
+  font-weight: normal;
+
+  padding-top: 20px;
+}
 
 
 
@@ -270,4 +295,32 @@ video{
       width: 0;
       height: 0;
     }
+
+    .list{
+      height: max-content;
+      width: 100%;
+    }
+
+    .subsystem-full-overlay{
+      height: 0;
+      width: 0%;
+    }
+
+    .functioning{
+      height:0;
+      width:0;
+    }
+
+    .rec{
+      padding-left: 90px;
+    }
+
+    .recruitment{
+    font-weight:bolder;
+    font-size:large;
+
+    height: 50px;
+    
+    width: 200px;
+  }
 }

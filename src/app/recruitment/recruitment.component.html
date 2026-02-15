@@ -27,7 +27,7 @@
 
 
     <!-- -------------------------------------LIST SUBSYSTEMS---------------------------------------- -->
-    <div style="gap:20px ;padding-top: 0px; display: flex; flex-direction: column; background-color: rgb(44, 44, 44); height: 600px; width: 20%; align-items: center; justify-content: center;">
+    <div class="list">
 
 
         <!-- sponsors as a title -->
@@ -38,7 +38,7 @@
 
 
         <!-- --------MAKING COLUMNS--------- -->
-        <div style="width: 250px; gap: 20px; padding-top: 0px; display:flex; flex-direction: column; justify-content: center; align-items: left; padding-left: 30px;">
+        <div class="inner-list" style="width: 250px; gap: 20px; padding-top: 0px; display:flex; flex-direction: column; justify-content: center; align-items: left; padding-left: 30px;">
 
             <!-- ============================STEERING button and pointer======================== -->
             <div class="your-btn" style="display: flex; flex-direction: row; gap: 30px; position: relative;">
@@ -79,26 +79,6 @@
                 <div class="triangle" *ngIf="activeOverlay === 4"></div>
             </div>
 
-            
-            <!-- ============================BRAKING button and pointer======================== -->
-            <div class="your-btn" style="display: flex; flex-direction: row; gap: 30px;">
-                <div class="system A">
-                    <a (click)="showOverlay(5)" (mouseleave)="hideOverlayWithDelay()">BRAKING</a>
-                </div>
-
-                <div class="triangle" *ngIf="activeOverlay === 5"></div>
-            </div>
-
-
-            <!-- ============================TRANSMISSION button and pointer======================== -->
-            <div class="your-btn" style="display: flex; flex-direction: row; gap: 30px;">
-                <div class="system A">
-                    <a (click)="showOverlay(6)" (mouseleave)="hideOverlayWithDelay()">TRANSMISSION</a>
-                </div>
-
-                <div class="triangle" *ngIf="activeOverlay === 6"></div>
-            </div>
-
 
             <!-- ============================ELECTRICAL button and pointer======================== -->
             <div class="your-btn" style="display: flex; flex-direction: row; gap: 30px;">
@@ -127,6 +107,26 @@
                 </div>
 
                 <div class="triangle" *ngIf="activeOverlay === 9"></div>
+            </div>
+
+
+            <!-- ============================BRAKING button and pointer======================== -->
+            <div class="your-btn" style="display: flex; flex-direction: row; gap: 30px;">
+                <div class="system A">
+                    <a (click)="showOverlay(5)" (mouseleave)="hideOverlayWithDelay()">BRAKING</a>
+                </div>
+
+                <div class="triangle" *ngIf="activeOverlay === 5"></div>
+            </div>
+
+
+            <!-- ============================TRANSMISSION button and pointer======================== -->
+            <div class="your-btn" style="display: flex; flex-direction: row; gap: 30px;">
+                <div class="system A">
+                    <a (click)="showOverlay(6)" (mouseleave)="hideOverlayWithDelay()">TRANSMISSION</a>
+                </div>
+
+                <div class="triangle" *ngIf="activeOverlay === 6"></div>
             </div>
 
 
@@ -228,6 +228,9 @@
                         <p>
                             STEERING
                         </p>
+                        <p class="inside-text">
+                            Master the mechanics that move the wheels, and you command the motion of the vehicle.
+                        </p>
                     </div> 
 
                     <div class="img">
@@ -314,6 +317,9 @@
                     <div class="empty">
                         <p>
                             SUSPENSION
+                        </p>
+                        <p class="inside-text">
+                            Master the forces between the road and the vehicle.
                         </p>
                     </div> 
 
@@ -415,6 +421,9 @@
                         <p>
                             COMPUTER AIDED ENGINEERING
                         </p>
+                        <p class="inside-text">
+                            Turn simulations into reality and let virtual ideas drive real-world performance.
+                        </p>
                     </div> 
 
                     <div class="img">
@@ -506,6 +515,9 @@
                         <p>
                             DEIGN AND BODYWORKS
                         </p>
+                        <p class="inside-text">
+                            Engineer the form, sculpt the airflow, and turn structure into performance.
+                        </p>
                     </div> 
 
                     <div class="img">
@@ -567,26 +579,24 @@
 
                     <!-- Row 1 -->
                     <div class="img">
-                        <img src="/assets/recruitment/cae/knuckle.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/cae/brakedisc.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Brake Disc</div>
                     </div>
 
                     <div class="img">
-                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
-                            <source src="assets/recruitment/cae/cae_videos/impact3.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
                     <div class="img">
                         <img src="/assets/recruitment/cae/pedal.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Brake Pedal</div>
                     </div>
 
                     <!-- Row 2 -->
                     <div class="img">
-                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
-                            <source src="assets/recruitment/cae/cae_videos/impact2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
 
@@ -598,25 +608,26 @@
                     </div> 
 
                     <div class="img">
-                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
-                            <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
 
 
                     <!-- Row 3 -->
                     <div class="img">
-                        <img src="/assets/recruitment/cae/brakedisc.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/swing_arm.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/wishbone.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
                     
@@ -661,22 +672,19 @@
                     </div>
 
                     <div class="img">
-                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
-                            <source src="assets/recruitment/cae/cae_videos/impact3.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/pedal.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/cae/swing_arm.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Swing Arm</div>
                     </div>
 
                     <!-- Row 2 -->
                     <div class="img">
-                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
-                            <source src="assets/recruitment/cae/cae_videos/impact2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
 
@@ -685,28 +693,32 @@
                         <p>
                             TRANSMISSION
                         </p>
+                        <p class="inside-text">
+                            
+                        </p>
                     </div> 
 
                     <div class="img">
-                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
-                            <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
 
 
                     <!-- Row 3 -->
                     <div class="img">
-                        <img src="/assets/recruitment/cae/brakedisc.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/swing_arm.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/wishbone.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
                     
@@ -773,6 +785,9 @@
                     <div class="empty">
                         <p>
                             ELECTRICAL
+                        </p>
+                        <p class="inside-text">
+                            Step in where sunlight turns into speed and electrons power the future of mobility.
                         </p>
                     </div> 
 
@@ -929,26 +944,24 @@
 
                     <!-- Row 1 -->
                     <div class="img">
-                        <img src="/assets/recruitment/cae/knuckle.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/autonomous/noisy_cone_detection.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Object-Cone Detection</div>
                     </div>
 
                     <div class="img">
-                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
-                            <source src="assets/recruitment/cae/cae_videos/impact3.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/pedal.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/autonomous/rpi_cone_det.jpeg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Object-Cone Detection</div>
                     </div>
 
                     <!-- Row 2 -->
                     <div class="img">
-                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
-                            <source src="assets/recruitment/cae/cae_videos/impact2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
 
@@ -957,28 +970,29 @@
                         <p>
                             AUTONOMOUS DRIVING
                         </p>
+                        <p class="inside-text">
+                            Join us where code meets the road, and we teach machines to drive the future.
+                        </p>
                     </div> 
 
                     <div class="img">
-                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
-                            <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
 
 
                     <!-- Row 3 -->
                     <div class="img">
-                        <img src="/assets/recruitment/cae/brakedisc.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/swing_arm.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/wishbone.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
                     </div>
 
                     
@@ -1020,26 +1034,24 @@
 
                     <!-- Row 1 -->
                     <div class="img">
-                        <img src="/assets/recruitment/cae/knuckle.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
                     <div class="img">
-                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
-                            <source src="assets/recruitment/cae/cae_videos/impact3.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/pedal.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
                     <!-- Row 2 -->
                     <div class="img">
-                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
-                            <source src="assets/recruitment/cae/cae_videos/impact2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
 
@@ -1051,25 +1063,26 @@
                     </div> 
 
                     <div class="img">
-                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
-                            <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
 
 
                     <!-- Row 3 -->
                     <div class="img">
-                        <img src="/assets/recruitment/cae/brakedisc.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/swing_arm.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/cae/wishbone.jpg" class="abc" (click)="openPreview($event)">
+                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle"></div>
                     </div>
 
                     
