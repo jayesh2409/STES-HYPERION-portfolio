@@ -167,7 +167,105 @@
 <!-- ===============ALL SUBSYSTEMS IN HYPERION overlay=================== -->
 
             <div class="functioning" *ngIf="activeOverlay === null">
-                ALL SUB SYSTEMS IN HYPERION
+
+                <!-- IMAGE CLICK OVERLAY start-->
+
+                <div *ngIf="showPreview" class="overlay-bg" (click)="closePreview()">
+
+                    <!-- counter -->
+                    <div class="countdown">
+                        <p>
+                            {{ countdownValue }}
+                        </p>
+                    </div>
+                     
+
+                    <ng-container *ngIf="isImage">
+                        <img [src]="currentSrc" class="open-image-or-video abc" />
+                    </ng-container>
+
+                    <ng-container *ngIf="!isImage">
+                        <video [src]="currentSrc" class="open-image-or-video abc" playsinline loop autoplay muted controls></video>
+                    </ng-container>
+
+                </div>
+
+                <!-- IMAGE CLICK OVERLAY end -->
+
+                <div class="grid">
+
+                    <!-- Row 1 -->
+                    <div class="img">
+                        <img src="/assets/recruitment/steering/steering_assembly.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Steering Assembly</div>
+                        <div class="s">STEERING</div>
+                    </div>
+
+                    <div class="img">
+                        <video class="abc" (click)="openPreview($event)" autoplay muted loop>
+                            <source src="assets/recruitment/cae/cae_videos/impact.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="subtitle">Impact Simulation</div>
+                        <div class="s">COMPUTER AIDED ENGINEERING</div>
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/suspension/wish_bone.jpg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Wish Bone</div>
+                        <div class="s">SUSPENSION</div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="img">
+                        <img src="/assets/recruitment/electrical/pcb.jpeg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">PCB Printed Circuit Board</div>
+                        <div class="s">ELECTRICAL & SIMULATIONS</div>
+                    </div>
+
+
+                    <!-- Center div -->
+                    <div class="empty">
+                        <p>
+                            SUBSYSTEMS
+                        </p>
+                        <p class="inside-text">
+                            Integrated subsystems collaboratively design, control, power, analyze, and support intelligent vehicle operation efficiently reliably.
+                        </p>
+                    </div> 
+
+                    <div class="img">
+                        <img src="/assets/recruitment/autonomous/noisy_cone_detection.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Object-Cone Detection</div>
+                        <div class="s">AUTONOMOUS</div>
+                    </div>
+
+
+
+                    <!-- Row 3 -->
+                    <div class="img">
+                        <img src="assets/recruitment/design/95th.png" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">95th Percentile</div>
+                        <div class="s">DESIGN</div>
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/transmission/wheel.jpeg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Wheel</div>
+                        <div class="s">TRANSMISSION</div>
+                    </div>
+
+                    <div class="img">
+                        <img src="/assets/recruitment/media/bplan.jpeg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Business Plan</div>
+                        <div class="s">NON TECHNICAL</div>
+                    </div>
+
+                    
+                     
+                </div>
+
+                
             </div>
 
 <!-- ===============STEERING overlay=================== -->
@@ -495,7 +593,7 @@
 
                     <div class="img">
                         <img src="/assets/recruitment/design/bw2.png" class="abc" (click)="openPreview($event)">
-                        <div class="subtitle">Bodworks</div>
+                        <div class="subtitle">Bodyworks</div>
                     </div>
 
                     <div class="img">
@@ -605,6 +703,9 @@
                         <p>
                             BRAKING
                         </p>
+                        <p class="inside-text">
+                            Ensures safe, reliable vehicle deceleration and stopping through efficient braking system design and integration.
+                        </p>
                     </div> 
 
                     <div class="img">
@@ -694,7 +795,7 @@
                             TRANSMISSION
                         </p>
                         <p class="inside-text">
-                            
+                            Efficiently transfers power from the motor to the wheels for smooth vehicle motion.
                         </p>
                     </div> 
 
@@ -1034,18 +1135,18 @@
 
                     <!-- Row 1 -->
                     <div class="img">
-                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
-                        <div class="subtitle"></div>
+                        <img src="/assets/recruitment/media/content_creation.jpeg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Content Creation</div>
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
-                        <div class="subtitle"></div>
+                        <img src="/assets/recruitment/media/editing.jpeg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Content Editing</div>
                     </div>
 
                     <div class="img">
-                        <img src="/assets/recruitment/blank.png" class="abc" (click)="openPreview($event)">
-                        <div class="subtitle"></div>
+                        <img src="/assets/recruitment/media/bplan.jpeg" class="abc" (click)="openPreview($event)">
+                        <div class="subtitle">Business Plan</div>
                     </div>
 
                     <!-- Row 2 -->
@@ -1059,6 +1160,9 @@
                     <div class="empty">
                         <p>
                             MEDIA
+                        </p>
+                        <p class="inside-text">
+                            Manages business planning, cost analysis, content creation, and social media for professional team representation.
                         </p>
                     </div> 
 

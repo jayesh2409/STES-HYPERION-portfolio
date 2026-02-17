@@ -17,6 +17,14 @@ a{
   font-size: smaller;
 }
 
+.s{
+  font-family: 'Titillium Web', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  font-size: smaller;
+  font-weight: bold;
+}
+
 .title-subsyst{
   padding-top: 10px;
   display: flex;
