@@ -112,14 +112,15 @@ h1 {
 }
 
 .mission-image{
-  height: 150px;
-  width: 250px;
+  height: 250px;
+  width: 400px;
   border-radius: 3px;
   clip-path: polygon(0 0, 90% 0, 75% 100%, 0 100%);
 }
 
 .mission-text{
   padding-left: 10px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
