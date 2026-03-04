@@ -1,42 +1,54 @@
-# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
-
-# Compiled output
+# Node.js dependencies
+node_modules
+/build
 /dist
-/tmp
-/out-tsc
-/bazel-out
+.npm
+.angular
 
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
+# Logs
+logs
+*.log
+npm-debug.log*
 
-# IDEs and editors
-.idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+# Runtime data
+pids
+*.pid
+*.seed
 
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
+# Environment variables
+.env
+.env.local
 
-# Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
+# Coverage reports
+coverage
+.nyc_output
 
-# System files
-.DS_Store
-Thumbs.db
+# Grunt intermediate storage
+.grunt
+
+# Compiled binary addons
+build/Release
+
+# Optional REPL history
+.node_repl_history
+
+# IDE and OS files
+.DS_Store # macOS
+.idea/ # JetBrains IDEs
+.vscode/ # VS Code (optional, if you want to share specific settings)
+*.suo
+*.user
+*.cas
+*.zone.identifier
+Thumbs.db # Windows
+
+# Build artifacts for client-side (if your client build outputs to a specific directory)
+# e.g., if the client build goes into a 'public' or 'client/build' folder
+# public/
+# client/build/
+
+# MongoDB specific files (if using local database files)
+.mongo/
+*.journal
+*.lock
+*.ns
